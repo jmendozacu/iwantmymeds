@@ -6,3 +6,4 @@ var/
 media/catalog/
 media/downloadable/
 media/import/
+error.log
