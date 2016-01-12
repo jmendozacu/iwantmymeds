@@ -1,0 +1,17 @@
+/* scrolling cart */
+.shoppingcart .fadelink {
+	background: #00bb00;
+}
+
+#right_toolbar .form-search button {
+	background: #00bb00;
+}
+
+.shopping_cart_mini .button {
+	background: #00bb00;
+	color: #fff;
+}
+
+.shopping_cart_mini .button:hover {
+	color: #fff;
+}

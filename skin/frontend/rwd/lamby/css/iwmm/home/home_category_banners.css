@@ -1,0 +1,222 @@
+/* .home_category_banners */
+
+.home_category_banners {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.home_category_banners .row {
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+.home_category_banners .col {
+	width: 25%;
+	float: left;
+	box-sizing: border-box;
+	padding: 0 15px;
+}
+
+/* .home_category_banner */
+
+.home_category_banner {
+	position: relative;
+	display: block;
+}
+
+.home_category_banner .home_category_banner_bg {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.home_category_banner .home_category_banner_text {
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+
+	padding: 30px 25px 0;
+	border: solid 4px rgba(255, 255, 255, .2);
+
+	transition: all .3s;
+}
+
+.home_category_banner .home_category_banner_title {
+	font-size: 24px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	line-height: 1;
+	height: 2em;
+}
+
+.home_category_banner .home_category_banner_more {
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 25px;
+	display: block;
+	font-size: 12px;
+	font-weight: 600;
+
+	transition: all .3s;
+}
+
+.home_category_banner:hover .home_category_banner_text {
+	background: rgba(0, 0, 0, .3);
+}
+
+.home_category_banner:hover .home_category_banner_more {
+	color: #fff !important;
+}
+
+@media only screen and (max-width: 1169px) and (min-width: 978px) {
+	.home_category_banners {
+		margin-left: -9px;
+		margin-right: -9px;
+	}
+
+	.home_category_banners .row {
+		margin-top: 18px;
+	}
+
+	.home_category_banners .col {
+		padding: 0 9px;
+	}
+
+	.home_category_banner .home_category_banner_text {
+		padding: 20px;
+		padding-bottom: 0;
+	}
+
+	.home_category_banner .home_category_banner_title {
+		font-size: 20px;
+	}
+
+	.home_category_banner .home_category_banner_more {
+		margin-top: 18px;
+	}
+}
+
+@media only screen and (max-width: 977px) and (min-width: 768px) {
+	.home_category_banners {
+		margin-left: -7.5px;
+		margin-right: -7.5px;
+	}
+
+	.home_category_banners .row {
+		margin-top: 15px;
+	}
+
+	.home_category_banners .col {
+		padding: 0 7.5px;
+	}
+
+	.home_category_banner .home_category_banner_text {
+		padding: 18px;
+	}
+
+	.home_category_banner .home_category_banner_title {
+		height: auto;
+		font-size: 16px;
+	}
+
+	.home_category_banner .home_category_banner_more {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 767px) and (min-width: 568px) {
+	.home_category_banners {
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+
+	.home_category_banners .row {
+		margin-top: 0;
+	}
+
+	.home_category_banners .col {
+		width: 50%;
+		padding: 0 5px;
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 567px) and (min-width: 480px) {
+	.home_category_banners {
+		margin-left: -4px;
+		margin-right: -4px;
+	}
+
+	.home_category_banners .row {
+		margin-top: 0;
+	}
+
+	.home_category_banners .col {
+		width: 50%;
+		padding: 0 4px;
+		margin-top: 8px;
+	}
+
+	.home_category_banner .home_category_banner_text {
+		padding: 18px;
+	}
+
+	.home_category_banner .home_category_banner_title {
+		font-size: 22px;
+	}
+
+	.home_category_banner .home_category_banner_more {
+		margin-top: 21px;
+	}
+
+	.home_category_banner {
+		overflow: hidden;
+	}
+
+	.home_category_banner .home_category_banner_bg {
+		position: absolute;
+	}
+
+	.home_category_banner .home_category_banner_text {
+		position: relative;
+	}
+
+	.home_category_banner .home_category_banner_more {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 479px) and (min-width: 320px) {
+	.home_category_banners {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.home_category_banners .row {
+		margin-top: 0;
+	}
+
+	.home_category_banners .col {
+		width: 100%;
+		padding: 0;
+		margin-top: 8px;
+	}
+
+	.home_category_banner {
+		overflow: hidden;
+	}
+
+	.home_category_banner .home_category_banner_bg {
+		position: absolute;
+	}
+
+	.home_category_banner .home_category_banner_text {
+		position: relative;
+		padding-bottom: 30px;
+	}
+
+	.home_category_banner .home_category_banner_more {
+		display: none;
+	}
+}

@@ -1,0 +1,39 @@
+
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+<!DOCTYPE html>
+<html lang="<?php echo $this->getLang() ?>">
+<head>
+<?php echo $this->getChildHtml('head') ?>
+</head>
+
+<body class="<?php echo $this->getBodyClass()?' '.$this->getBodyClass().'':'' ?>" itemscope itemtype="http://schema.org/WebPage">
+    <?php echo $this->getChildHtml('after_body_start') ?>
+    <?php echo $this->getChildHtml('global_notices') ?>      
+       <?php echo $this->getChildHtml('header') ?> 
+            
+       <div class="main-col">  
+          <article>             
+              <?php echo $this->getChildHtml('breadcrumbs') ?>               
+              <?php echo $this->getChildHtml('global_messages') ?>
+              <?php echo $this->getChildHtml('content') ?>
+          </article>
+      </div> <!--main-col-->
+      
+      <!-- Home Lastest Blog Block -->
+      <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('lamby_home_latest_blog_block')->toHtml() ?>      
+      
+      <?php echo $this->getChildHtml('footer') ?>
+      <?php echo $this->getChildHtml('before_body_end') ?>
+      <?php echo $this->getAbsoluteFooter() ?>     
+
+      <?php if(Mage::app()->getStore()->getConfig('lambysettings/lambysettings_newsletterpopup/newsletterpopup_enable')==1){?>
+          <?php echo $this->getLayout()->createBlock('newsletter/subscribe')->setTemplate('newsletter/subscribe_home_popup.phtml')->toHtml() ; ?>
+      <?php } ?>
+  
+</body>
+</html>
+

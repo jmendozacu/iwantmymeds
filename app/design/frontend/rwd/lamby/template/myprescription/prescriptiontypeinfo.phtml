@@ -1,0 +1,35 @@
+<div id="more_info_popup">
+    <h1>
+        Order your prescription medicine online
+    </h1>
+    <p>
+        We'll happily dispense this item from our online pharmacy if you have a prescription. Just enter the name that's on your prescription, select the option that's right for you and go through to the checkout. This way, you get the convenience of online ordering, with the confidence that comes from using one of the UK's most trusted pharmacies.
+    </p>
+    <form id="popup_prescriptioncheck_form" action="<?php echo Mage::getUrl('myprescription/index/prescriptioncheck') ?>" method="post">
+        <input type="hidden" name="url_redirect_product" id="url_redirect_product" value="">
+        <div class="box-1">
+            <h2>What type of prescription do you have?</h2>
+            <div class="checkbox">
+                <input type="radio" class="prescription"  name="perscription_type" value="pay"><strong>NHS Prescription</strong><br>
+            </div>
+
+            <p>I need to pay for this NHS prescription</p>
+            <div class="checkbox">
+                <input type="radio" class="prescription" name="perscription_type" value="no_pay"><strong>NHS Prescription</strong><br>
+            </div>
+            <p>I dont need to pay for this NHS prescription</p>
+            <div class="checkbox">
+                <input type="radio" class="prescription" name="perscription_type" value="private"><strong>Private Prescription</strong><br>
+            </div>
+            <p>I have a private prescription</p>
+            <p class="message-valid-type" style="display: none;color: #d90000"><?php echo $this->__('Please choose a prescription type');?></p>
+            <p>Please enter the name as it is on the prescription</p>
+            <input type="text" id="name_on_prescription" name="name_on_prescription"/>
+            <p class="message-valid-name" style="display: none;color: #d90000"><?php echo $this->__('Please enter a valid patient name');?></p>
+        </div>
+        <a href="#" id="submit_pop_up_form" class="button btn-submit"><span><?php echo $this->__('Continue Order') ?></span></a>
+    </form>
+    <a href="<?php echo Mage::getBaseUrl().'more-info-page-one'?>"><span>I don't know if I need to pay for my prescription</span></a>
+    <br/>
+    <a href="<?php echo Mage::getBaseUrl().'more-info-page-tow'?>"><span>I don't have a prescription</span></a>
+</div>

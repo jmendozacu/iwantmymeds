@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <prescriptioncheckout translate="label" module="prescriptioncheckout">
+            <label>Manage Prescription</label>
+            <tab>Manage Prescription</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>980</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>0</show_in_store>
+            <groups>
+                <prescription_product>
+                    <label>Manage Prescription Title</label>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <your_field_name translate="label comment">
+                            <label>Your Field Title</label>
+                            <comment>Your Comment</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </your_field_name>
+                    </fields>
+                </prescription_product>
+            </groups>
+        </prescriptioncheckout>
+    </sections>
+</config>

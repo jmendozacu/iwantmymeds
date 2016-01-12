@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Newedge_Orderhook>
+            <version>1.0</version>
+        </Newedge_Orderhook>
+    </modules>
+    <global>
+        <models>
+            <orderhook>
+                <class>Newedge_Orderhook_Model</class>
+            </orderhook>
+        </models>
+        <events>
+            <sales_order_place_after>
+                <observers>
+                    <auto_invoice_order>
+                        <type>singleton</type>
+                        <class>Newedge_Orderhook_Model_Observer</class>
+                        <method>implementOrderStatus</method>
+                    </auto_invoice_order>
+                </observers>
+            </sales_order_place_after>
+        </events>
+    </global>
+</config>

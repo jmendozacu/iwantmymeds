@@ -1,0 +1,179 @@
+.weekly_deals {
+	position: relative;
+	background-size: contain;
+	margin-top: 60px;
+}
+
+.weekly_deals .weekly_deals_product {
+	display: block;
+	max-width: 100%;
+}
+
+.weekly_deals .weekly_deals_text {
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+
+	text-align: right;
+	padding-right: 60px;
+
+	transition: all .3s;
+}
+
+.weekly_deals .weekly_deals_text .weekly_deals_title {
+	color: #902d97;
+	font-size: 42px;
+	font-weight: 900;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	line-height: 1;
+
+	margin-top: 38px;
+	letter-spacing: -1px;
+}
+
+.weekly_deals .weekly_deals_text .button {
+	background: #00bb00;
+	color: #fff;
+	border: none;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px 28px;
+
+	margin-top: 20px;
+	border: solid 2px transparent;
+	transition: all .2s;
+}
+
+.weekly_deals .weekly_deals_text .button:hover {
+	background: #fff !important;
+	color: #00bb00 !important;
+	border-color: #00bb00 !important;
+}
+
+.weekly_deals.hover .weekly_deals_text {
+	background: rgba(0, 0, 0, .05);
+}
+
+@media only screen and (max-width: 1169px) and (min-width: 978px) {
+	.weekly_deals {
+		margin-top: 36px;
+	}
+
+	.weekly_deals .weekly_deals_text .weekly_deals_title {
+		font-size: 34px;
+		margin-top: 30px;
+	}
+
+	.weekly_deals .weekly_deals_text .button {
+		margin-top: 12px;
+		font-size: 12px;
+		padding: 8px 24px;
+	}
+}
+
+@media only screen and (max-width: 977px) and (min-width: 768px) {
+	.weekly_deals {
+		margin-top: 30px;
+	}
+
+	.weekly_deals .weekly_deals_text {
+		padding-right: 30px;
+	}
+
+	.weekly_deals .weekly_deals_text .weekly_deals_title {
+		font-size: 28px;
+		margin-top: 22px;
+	}
+
+	.weekly_deals .weekly_deals_text .button {
+		font-size: 9px;
+		padding: 4px 16px;
+		margin-top: 12px;
+	}
+}
+
+@media only screen and (max-width: 767px) and (min-width: 568px) {
+	.weekly_deals {
+		margin-top: 20px;
+	}
+
+	.weekly_deals .weekly_deals_product {
+		visibility: hidden;
+	}
+
+	.weekly_deals .weekly_deals_text {
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-top: 20px;
+	}
+
+	.weekly_deals .weekly_deals_text .weekly_deals_title {
+		float: left;
+		margin-top: 0;
+		font-size: 30px;
+		margin-top: 9px;
+	}
+
+	.weekly_deals .weekly_deals_text .button {
+		float: right;
+		margin-top: 1px;
+	}
+}
+
+@media only screen and (max-width: 567px) and (min-width: 480px) {
+	.weekly_deals {
+		margin-top: 16px;
+	}
+
+	.weekly_deals .weekly_deals_product {
+		visibility: hidden;
+	}
+
+	.weekly_deals .weekly_deals_text {
+		padding-left: 18px;
+		padding-right: 18px;
+		padding-top: 14px;
+	}
+
+	.weekly_deals .weekly_deals_text .weekly_deals_title {
+		float: left;
+		font-size: 26px;
+		margin-top: 9px;
+	}
+
+	.weekly_deals .weekly_deals_text .button {
+		float: right;
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 479px) and (min-width: 320px) {
+	.weekly_deals {
+		margin-top: 16px;
+	}
+
+	.weekly_deals .weekly_deals_product {
+		visibility: hidden;
+	}
+
+	.weekly_deals .weekly_deals_text {
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 9px;
+	}
+
+	.weekly_deals .weekly_deals_text .weekly_deals_title {
+		float: left;
+		font-size: 18px;
+		margin-top: 6px;
+		letter-spacing: 0;
+	}
+
+	.weekly_deals .weekly_deals_text .button {
+		float: right;
+		margin-top: 0;
+		font-size: 9px;
+		padding: 4px 16px;
+	}
+}

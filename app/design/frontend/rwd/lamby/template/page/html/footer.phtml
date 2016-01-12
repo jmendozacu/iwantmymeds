@@ -1,0 +1,79 @@
+<?php $footer_type = Mage::getStoreConfig('lambysettings/lambysettings_appearance/footer'); ?>
+
+<!-- Logo Brand Block -->
+<?php 
+if(Mage::getBlockSingleton('page/html_header')->getIsHomePage()) {
+  echo $this->getLayout()->createBlock('cms/block')->setBlockId('lamby_logo_brand_block')->toHtml();
+}
+?>
+
+<footer>
+
+
+
+<div class="footer <?php echo $footer_type;?>">
+
+<!-- BEGIN INFORMATIVE FOOTER -->  
+  <?php switch ($footer_type) {
+      case 'informative' :
+          ?>
+
+<div class="newsletter-wrap">
+  <div class="inner">
+     <?php if (Mage::getStoreConfig('lambysettings/lambysettings_social/social_link')) { ?>
+    <div class="social">      
+       <ul class="link">
+        <?php if (Mage::getStoreConfig('lambysettings/lambysettings_social/facebook_social_link')) { ?>
+          <li class="fb"><a target="_blank" rel="nofollow" href="<?php echo Mage::getStoreConfig('lambysettings/lambysettings_social/facebook_social_link_path') ?>" title="<?php echo $this->__('Facebook');?>"></a></li>
+        <?php } 
+              if (Mage::getStoreConfig('lambysettings/lambysettings_social/twitter_social_link')) {
+        ?>
+          <li class="tw"><a target="_blank" rel="nofollow"  href="<?php echo Mage::getStoreConfig('lambysettings/lambysettings_social/twitter_social_link_path') ?>" title="<?php echo $this->__('Twitter');?>"></a></li>
+        <?php }  
+              if (Mage::getStoreConfig('lambysettings/lambysettings_social/pinterest_social_link')) {
+        ?>
+          <li class="pintrest"><a target="_blank" rel="nofollow" href="<?php echo Mage::getStoreConfig('lambysettings/lambysettings_social/pinterest_social_link_path') ?>" title="<?php echo $this->__('PInterest');?>"></a></li>
+        <?php } 
+              if (Mage::getStoreConfig('lambysettings/lambysettings_social/linkedin_social_link')) {
+        ?>
+          <li class="linkedin"><a  target="_blank" rel="nofollow" href="<?php echo Mage::getStoreConfig('lambysettings/lambysettings_social/linkedin_social_link_path') ?>" title="<?php echo $this->__('Linkedin');?>"></a></li>
+        <?php } 
+              if (Mage::getStoreConfig('lambysettings/lambysettings_social/youtube_social_link')) {
+        ?>
+          <li class="youtube"><a target="_blank" rel="nofollow" href="<?php echo Mage::getStoreConfig('lambysettings/lambysettings_social/youtube_social_link_path') ?>" title="<?php echo $this->__('Youtube');?>"></a></li>
+        <?php } ?>
+       </ul>
+    </div> <!--social-->
+    <?php } ?>
+    <!-- Footer Newsletter -->
+    <?php echo $this->getLayout()->createBlock('newsletter/subscribe')->setTemplate('newsletter/subscribe_footer.phtml')->toHtml() ; ?>
+  </div> <!--inner-->
+</div> <!--newsletter-wrap-->
+
+<div class="inner">
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('lamby_footer_about_us')->toHtml() ?>
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('lamby_footer_information_links_block')->toHtml() ?>
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('lamby_footer_contact_us')->toHtml() ?>
+</div> <!--inner-->
+
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('lamby_footer_links')->toHtml() ?>
+
+<!-- BEGIN SIMPLE FOOTER -->  
+          <?php
+          break;
+      case 'simple' :
+      default: ?>
+     
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('lamby_footer_links')->toHtml() ?>
+
+     <?php     
+  }
+  ?> 
+
+</div> <!--footer-->
+
+</footer>
+
+<?php if (Mage::getStoreConfig('lambysettings/lambysettings_footer/footer_google_analytics')): ?>
+<?php echo Mage::getStoreConfig('lambysettings/lambysettings_footer/footer_google_analytics_path') ?>       
+<?php endif; ?>

@@ -1,0 +1,24 @@
+<?php
+$prescription =  Mage::getSingleton('checkout/session')->getPrescriptionAttribute();
+$items = Mage::getSingleton('checkout/session')->getQuote()->getAllItems();
+$check = 0;
+?>
+
+<?php foreach ($items as $item): ?>
+    <?php $product = Mage::getModel('catalog/product')->load($item->getProductId())->getData(); ?>
+    <?php if (isset($product['is_prescription_product'])): ?>
+        <?php if ($product['is_prescription_product'] == 1): ?>
+            <div><h1>Product </h1></div>
+            <div>
+                <h1>Name : </h1>
+                <?php
+                echo $item->getName();
+                $check++;
+                ?>
+            </div>
+        <?php endif; ?>
+    <?php endif; ?>
+<?php endforeach; ?>
+<?php if($check != 0): ?>
+    <div><h1>Prescription exemtion :</h1><?php echo $prescription['descriptions']; ?></div>
+<?php endif; ?>

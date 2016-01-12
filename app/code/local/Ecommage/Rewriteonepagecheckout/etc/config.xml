@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ecommage_Rewriteonepagecheckout>
+            <version>0.1.1</version>
+        </Ecommage_Rewriteonepagecheckout>
+    </modules>
+    <adminhtml>
+        <layout>
+            <updates>
+                <rewriteonepagecheckout>
+                    <file>rewriteonepagecheckout.xml</file>
+                </rewriteonepagecheckout>
+            </updates>
+        </layout>
+    </adminhtml>
+    <frontend>
+        <routers>
+            <opc>
+                <use>standard</use>
+                <args>
+                    <modules>
+                        <rewriteonepagecheckout before="IWD_Opc">Ecommage_Rewriteonepagecheckout</rewriteonepagecheckout>
+                    </modules>
+                </args>
+            </opc>
+        </routers>
+
+        <layout>
+            <updates>
+                <rewriteonepagecheckout>
+                    <file>rewriteonepagecheckout.xml</file>
+                </rewriteonepagecheckout>
+            </updates>
+        </layout>
+
+    </frontend>
+    <global>
+        <blocks>
+            <rewriteonepagecheckout>
+                <class>Ecommage_Rewriteonepagecheckout_Block</class>
+            </rewriteonepagecheckout>
+            <adminhtml>
+                <rewrite>
+                    <sales_order_view_info>Ecommage_Rewriteonepagecheckout_Block_Adminhtml_Sales_Order_View_Info</sales_order_view_info>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+    </global>
+</config>

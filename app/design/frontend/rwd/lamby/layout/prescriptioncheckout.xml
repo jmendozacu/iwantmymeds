@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <prescriptioncheckout_otherprescription_index>
+        <reference name="head">
+          <action method="addItem"><type>skin_js</type><name>js/ecommage/prescription/checked_checkbox_otherprescription.js</name></action>
+        </reference>
+        <reference name="content">
+            <block type="prescriptioncheckout/otherprescription" name="otherprescription" template="ecommage/otherprescription.phtml" />
+        </reference>
+    </prescriptioncheckout_otherprescription_index>
+</layout>

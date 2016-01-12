@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <!--<myprescription_adminhtml_registerrepeat_index>-->
+        <!--<reference name="content">-->
+            <!--<block type="myprescription/adminhtml_register" name="register" />-->
+        <!--</reference>-->
+    <!--</myprescription_adminhtml_registerrepeat_index>-->
+    <!--<adminhtml_registerrepeat_new>-->
+        <!--<update handle="adminhtml_register_edit" />-->
+    <!--</adminhtml_registerrepeat_new>-->
+
+    <!--<adminhtml_registerrepeat_edit>-->
+        <!--<update handle="editor"/>-->
+        <!--<reference name="content">-->
+            <!--<block type="myprescription/adminhtml_register_edit" name="register_edit"></block>-->
+        <!--</reference>-->
+        <!--<reference name="left">-->
+            <!--<block type="myprescription/adminhtml_register_edit_tabs" name="register_edit_tabs">-->
+                <!--<block type="myprescription/adminhtml_register_edit_tab_main" name="reggister_edit_tab_main" />-->
+                <!--<action method="addTab"><name>main_section</name><block>reggister_edit_tab_main</block></action>-->
+            <!--</block>-->
+        <!--</reference>-->
+    <!--</adminhtml_registerrepeat_edit>-->
+</layout>

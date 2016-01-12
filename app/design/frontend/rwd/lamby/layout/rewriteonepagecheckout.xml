@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <opc_index_index translate="label">
+        <reference name="content">
+            <!--<block type="rewriteonepagecheckout/prescriptionproduct" before="checkout.onepage.login" name="prescriptionproduct" template="rewriteonepagecheckout/prescriptionproduct.phtml" />-->
+        </reference>
+    </opc_index_index>
+</layout>

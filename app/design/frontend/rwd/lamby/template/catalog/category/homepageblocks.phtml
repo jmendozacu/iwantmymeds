@@ -1,0 +1,144 @@
+<?php 
+$_helper = Mage::helper('catalog/category');
+$categoryCount = "8";//$this->getData('num_categories');
+$_categories = $_helper->getStoreCategories();
+
+if (count($_categories) > 0){ ?>
+	<div>
+		<div class="home_category_banners">
+			<div class="row">
+				<?php 
+				$catCounter = 1;
+				foreach($_categories as $_category){
+					if ($catCounter <= $categoryCount){
+						
+						?>
+						<div class="col">
+							<a class="home_category_banner" href="<?php echo $_helper->getCategoryUrl($_category) ?>">
+								<img class="home_category_banner_bg" src="/skin/frontend/rwd/lamby/images/iwmm/home_category_banner<?=$catCounter?>_bg_noborder.jpg" alt="My Medicine">
+								
+								<div class="home_category_banner_text">
+									<h3 class="home_category_banner_title"><?php echo $_category->getName() ?></h3>
+									<?php if ($catCounter % 2 != 0){?>
+										<span class="home_category_banner_more" style="color: #ffbc16;">see products</span>
+									<?php 
+										} else if ($catCounter == 4 || $catCounter == 6) {?>
+										<span class="home_category_banner_more" style="color: #902d97;">see products</span>
+									<?php 
+										} else {?>
+										<span class="home_category_banner_more" style="color: #00bb00;">see products</span>
+									<?php 
+										}?>
+									
+								</div>
+							</a>
+						</div>
+						<?php 
+							if ($catCounter == 4){ ?>
+								</div>
+							<div class="row">
+						<?php }
+						$catCounter++;
+					}
+				 } ?>
+			</div>
+		</div>
+	</div>
+<?php } ?>
+
+
+
+
+<!-- 
+
+<div>
+<div class="home_category_banners">
+
+	<div class="row">
+		<div class="col">
+			<a class="home_category_banner" href="{{config path="web/unsecure/base_url"}}babycare.html">
+				<img class="home_category_banner_bg" src="{{skin url='images/iwmm/home_category_banner1_bg_noborder.jpg'}}" alt="My Medicine">
+				
+				<div class="home_category_banner_text">
+					<h3 class="home_category_banner_title">Babycare</h3>
+					<span class="home_category_banner_more" style="color: #ffbc16;">see products</span>
+				</div>
+			</a>
+		</div>
+		<div class="col">
+			<a class="home_category_banner" href="{{config path="web/unsecure/base_url"}}appliances.html">
+				<img class="home_category_banner_bg" src="{{skin url='images/iwmm/home_category_banner2_bg_noborder.jpg'}}" alt="My Health">
+				
+				<div class="home_category_banner_text">
+					<h3 class="home_category_banner_title">Appliances</h3>
+					<span class="home_category_banner_more" style="color: #00bb00;">see products</span>
+				</div>
+			</a>
+		</div>
+		<div class="col">
+			<a class="home_category_banner" href="{{config path="web/unsecure/base_url"}}cosmetics.html">
+				<img class="home_category_banner_bg" src="{{skin url='images/iwmm/home_category_banner3_bg_noborder.jpg'}}" alt="Toiletries">
+				
+				<div class="home_category_banner_text">
+					<h3 class="home_category_banner_title">Cosmetics</h3>
+					<span class="home_category_banner_more" style="color: #ffbc16;">see products</span>
+				</div>
+			</a>
+		</div>
+		<div class="col">
+			<a class="home_category_banner" href="{{config path="web/unsecure/base_url"}}virtual-generics.html">
+				<img class="home_category_banner_bg" src="{{skin url='images/iwmm/home_category_banner4_bg_noborder.jpg'}}" alt="Beauty&amp; Fragrance">
+				
+				<div class="home_category_banner_text">
+					<h3 class="home_category_banner_title">Virtual<br />&amp; Generics</h3>
+					<span class="home_category_banner_more" style="color: #902d97;">see products</span>
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col">
+			<a class="home_category_banner" href="{{config path="web/unsecure/base_url"}}nutritional-supplements.html">
+				<img class="home_category_banner_bg" src="{{skin url='images/iwmm/home_category_banner5_bg_noborder.jpg'}}" alt="Mamas &amp; baby">
+				
+				<div class="home_category_banner_text">
+					<h3 class="home_category_banner_title">Nutritional<br />&amp; supplements</h3>
+					<span class="home_category_banner_more" style="color: #ffbc16;">see products</span>
+				</div>
+			</a>
+		</div>
+		<div class="col">
+			<a class="home_category_banner" href="{{config path="web/unsecure/base_url"}}veterinary-products.html">
+				<img class="home_category_banner_bg" src="{{skin url='images/iwmm/home_category_banner6_bg_noborder.jpg'}}" alt="Travel Healthy">
+				
+				<div class="home_category_banner_text">
+					<h3 class="home_category_banner_title">Travel<br />Veterinary</h3>
+					<span class="home_category_banner_more" style="color: #902d97;">see products</span>
+				</div>
+			</a>
+		</div>
+		<div class="col">
+			<a class="home_category_banner" href="{{config path="web/unsecure/base_url"}}veterinary-products.html">
+				<img class="home_category_banner_bg" src="{{skin url='images/iwmm/home_category_banner7_bg_noborder.jpg'}}" alt="Electrical Health">
+				
+				<div class="home_category_banner_text">
+					<h3 class="home_category_banner_title">Electrical<br />Health</h3>
+					<span class="home_category_banner_more" style="color: #ffbc16;">see products</span>
+				</div>
+			</a>
+		</div>
+		<div class="col">
+			<a class="home_category_banner" href="{{config path="web/unsecure/base_url"}}dressings.html">
+				<img class="home_category_banner_bg" src="{{skin url='images/iwmm/home_category_banner8_bg_noborder.jpg'}}" alt="Mobility Aids">
+				
+				<div class="home_category_banner_text">
+					<h3 class="home_category_banner_title">Dressings<br />Aids</h3>
+					<span class="home_category_banner_more" style="color: #00bb00;">see products</span>
+				</div>
+			</a>
+		</div>
+	</div>
+
+</div>
+</div> -->

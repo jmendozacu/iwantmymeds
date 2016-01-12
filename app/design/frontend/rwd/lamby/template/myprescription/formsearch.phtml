@@ -1,0 +1,29 @@
+<?php
+    $currentUrl = Mage::helper('core/url')->getCurrentUrl();
+    $base_url = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);
+    $param = '';
+    $text_title = '';
+    if($currentUrl == $base_url.'my-prescription/nhs-prescription'){
+        $param = '2';
+        $text_title = 'NHS Prescription Order';
+    }elseif($currentUrl == $base_url.'my-prescription/vet-prescription'){
+        $param = '1';
+    }elseif($currentUrl == $base_url.'my-prescription/electronic-prescription'){
+        $param = '5';
+        $text_title = 'Electronic Prescription';
+    }elseif($currentUrl == $base_url.'my-prescription/private-prescription'){
+        $param = '3';
+        $text_title = 'Private Prescription';
+    }
+?>
+<div id="search_form_custom">
+    <?php if($param != ''): ?>
+        <h1><?php echo $text_title; ?></h1>
+        <form action="<?php echo $base_url; ?>myprescription/search"  id="search_mini_form_custom">
+            <input type="text" placeholder="Search Product Myprescription …" class="search-name" value="" name="search_name" id="abc" />
+            <input type="hidden" name="param" class="attribute" value="<?php echo $param; ?>" />
+            <button id="sad" class="asd" title="Search" type="submit">Search<span class="searchIconNew"></span></button>
+            <div class="search-autocomplete" id="search_autocomplete" style="display: none;"></div>
+        </form>
+    <?php endif; ?>
+</div>

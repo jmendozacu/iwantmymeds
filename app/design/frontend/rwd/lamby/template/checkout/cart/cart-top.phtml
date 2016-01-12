@@ -1,0 +1,13 @@
+<?php
+/* Top shopping Cart  */
+?>
+<div class="top-cart-contain">
+  <div class="mini-cart">
+  <div class="basket dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+
+
+      <a class="top-link-cart" href="<?php echo $this->getUrl('checkout/cart') ?>"><i class="icon-cart"></i> <div class="cart-box"><span class="title"><?php echo $this->__('my Cart');?></span><span id="cart-total"> <?php if(Mage::helper('checkout/cart')->getSummaryCount() > 1) { echo Mage::helper('checkout/cart')->getSummaryCount() . $this->__(' items'); } elseif(Mage::helper('checkout/cart')->getSummaryCount() == 1) { echo "1 item"; }  else {echo "0 item"; } ?> </span></div></a></div>
+      <div>
+  </div>
+  </div> <!--mini-cart-->
+</div> <!--top-cart-contain-->

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ecommage_Rewriteonepagecheckout>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <IWD_Opc/>
+            </depends>
+            <version>0.1.0</version>
+        </Ecommage_Rewriteonepagecheckout>
+    </modules>
+</config>

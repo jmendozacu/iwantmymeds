@@ -1,0 +1,54 @@
+<div class="page-title">
+    <h2><?php echo $this->__('Checkout') ?></h2>
+</div>
+<script type="text/javascript" src="<?php echo $this->getJsUrl('varien/accordion.js') ?>"></script>
+<script type="text/javascript" src="<?php echo $this->getSkinUrl('js/opcheckout.js') ?>"></script>
+<ol class="one-page-checkout" id="checkoutSteps">
+<?php $i=0; foreach($this->getSteps() as $_stepId => $_stepInfo): ?>
+<?php if (!$this->getChild($_stepId) || !$this->getChild($_stepId)->isShow()): continue; endif; $i++ ?>
+    <li id="opc-<?php echo $_stepId ?>" class="section<?php echo !empty($_stepInfo['allow'])?' allow':'' ?><?php echo !empty($_stepInfo['complete'])?' saved':'' ?>">
+        <div class="step-title"> 
+        <span class="number"><?php echo $i ?></span>          
+            <h3 class="one_page_heading">  <?php echo $_stepInfo['label'] ?></h3>
+        </div>
+        <div id="checkout-step-<?php echo $_stepId ?>" class="step a-item" style="display:none;">
+            <?php echo $this->getChildHtml($_stepId) ?>
+        </div>
+    </li>
+<?php endforeach ?>
+</ol>
+<script type="text/javascript">
+//<![CDATA[
+    var accordion = new Accordion('checkoutSteps', '.step-title', true);
+    <?php if($this->getActiveStep()): ?>
+    accordion.openSection('opc-<?php echo $this->getActiveStep() ?>');
+    <?php endif ?>
+    var checkout = new Checkout(accordion,{
+        progress: '<?php echo $this->getUrl('checkout/onepage/progress') ?>',
+        review: '<?php echo $this->getUrl('checkout/onepage/review') ?>',
+        saveMethod: '<?php echo $this->getUrl('checkout/onepage/saveMethod') ?>',
+        failure: '<?php echo $this->getUrl('checkout/cart') ?>'}
+    );
+//]]>
+</script>
+<br />
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-64287078-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TKSZ9M"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TKSZ9M');</script>
+<!-- End Google Tag Manager -->

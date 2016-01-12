@@ -1,0 +1,109 @@
+.category-prescriptions-products {
+
+}
+
+/*.category-prescriptions-products .side-nav-categories {
+	display: none;
+}*/
+
+.category-prescriptions-products .page-title h2 {
+	color: #902d97;
+}
+
+.category-prescriptions-products .category-products ul.products-grid li.item.opacity {
+	opacity: .3;
+}
+
+.category-prescriptions-products .products-grid .actions button.button.btn-cart,
+.category-prescriptions-products .products-grid .item:hover .actions button.button.btn-cart,
+.category-prescriptions-products .more-info-box-button {
+	background: #902d97;
+}
+
+.category-prescriptions-products .products-grid .actions button.button.btn-cart.solid,
+.category-prescriptions-products .products-grid .item:hover .actions button.button.btn-cart.solid,
+.category-prescriptions-products .products-grid .actions button.button.btn-cart.solid:hover,
+.category-prescriptions-products .products-grid .item:hover .actions button.button.btn-cart.solid:hover {
+	background: #902d97 !important;
+	color: #fff !important;
+	border-color: #902d97 !important;
+	position: relative;
+}
+
+.category-prescriptions-products .products-grid .actions button.button.btn-cart.solid:after {
+	display: block;
+	content: "";
+
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 6px 0 6px;
+	border-color: #902d97 transparent transparent transparent;
+
+	position: absolute;
+	left: 50%;
+	bottom: -6px;
+	margin-left: -6px;
+	margin-bottom: -2px;
+
+	z-index: 5;
+}
+
+.category-prescriptions-products .products-grid .item {
+	overflow: visible;
+}
+
+.category-prescriptions-products .products-grid .actions button.button.btn-cart:hover,
+.category-prescriptions-products .products-grid .item:hover .actions button.button.btn-cart:hover,
+.category-prescriptions-products .more-info-box-button:hover {
+	border-color: #902d97 !important;
+	color: #902d97 !important;
+}
+
+.category-prescriptions-products .pager .pages li.current span:hover,
+.category-prescriptions-products .toolbar .button:hover,
+.category-prescriptions-products .pager .pages li.current span:active,
+.category-prescriptions-products .toolbar .button:active,
+.category-prescriptions-products .pager .pages li.current span:focus,
+.category-prescriptions-products .toolbar .button:focus {
+	background-color: #902d97;
+	border-color: #902d97;
+}
+
+.category-prescriptions-products #limiter li li a:hover,
+.category-prescriptions-products #sort-by li li a:hover {
+	color: #902d97;
+}
+
+.category-prescriptions-products .button.prev:hover,
+.category-prescriptions-products .button.prev:focus,
+.category-prescriptions-products .pager .pages li a.button.next:hover,
+.category-prescriptions-products .pager .pages li a.button.next:focus {
+	background-color: #902d97;
+}
+
+.category-prescriptions-products .button-desc:hover,
+.category-prescriptions-products .button-desc:focus {
+	background-color: #902d97 !important;
+}
+
+.prescription-price {
+	text-align: center;
+	text-transform: uppercase;
+	color: #902d97;
+	font-weight: bold;
+	font-size: 12px;
+	margin-top: 15px;
+}
+
+.prescription-price + .price-box {
+	margin-top: 5px;
+}
+
+.prescription-price-txt {
+	font-weight: bold;
+	color: #902d97;
+	text-transform: uppercase;
+	margin-bottom: -25px;
+	margin-top: 25px;
+}

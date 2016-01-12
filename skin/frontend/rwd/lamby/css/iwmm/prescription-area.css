@@ -1,0 +1,97 @@
+.iwmm-prescription-area {
+
+}
+
+.iwmm-prescription-area .col-main {
+	color: #4c5962;
+	font-size: 14px;
+}
+
+.iwmm-prescription-area .page-title {
+	margin-bottom: 1em;
+}
+
+.iwmm-prescription-area .page-title h2 {
+	color: #902d97;
+}
+
+.iwmm-prescription-area .col-main .center {
+	text-align: center;
+}
+
+.iwmm-prescription-area .col-main .uppercase {
+	text-transform: uppercase;
+}
+
+.iwmm-prescription-area .col-main p {
+	line-height: 1.55;
+}
+
+.iwmm-prescription-area .col-main p + p {
+	margin-top: 1em;
+}
+
+.iwmm-prescription-area .col-main p strong {
+	font-weight: bold;
+	/*text-transform: uppercase;*/
+	color: #4c5962;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+
+.iwmm-prescription-area .col-main p a {
+	color: #902d97;
+	border-bottom: solid 1px transparent;
+	transition: all .2s;
+}
+
+.iwmm-prescription-area .col-main p a:hover {
+	border-color: #ddd;
+}
+
+.iwmm-prescription-area .image_left {
+	display: block;
+	float: left;
+	height: auto;
+	margin-right: 30px;
+	margin-bottom: 40px;
+}
+
+.iwmm-prescription-area .clear {
+	clear: both;
+}
+
+.iwmm-prescription-area .side-nav-categories {
+	display: block;
+}
+
+.side-nav-categories.iwmm-side-nav-categories .block-title {
+	background: #902d97;
+}
+
+.side-nav-categories.iwmm-side-nav-categories .block-title:before {
+	margin-right: 10px;
+	position: relative;
+	bottom: 1px;
+}
+
+.side-nav-categories.iwmm-side-nav-categories .block-title.before-prescription:before {
+	content: "\f0fa";
+}
+
+.side-nav-categories.iwmm-side-nav-categories .box-category ul {
+	padding: 0 !important;
+}
+
+.side-nav-categories.iwmm-side-nav-categories .box-category > ul > li ul {
+	padding-left: 0 !important;
+}
+
+.side-nav-categories.iwmm-side-nav-categories .box-category ul li {
+	list-style: none;
+}
+
+.side-nav-categories.iwmm-side-nav-categories .box-category > ul > li ul > li.current > a,
+.side-nav-categories.iwmm-side-nav-categories .box-category > ul > li ul > li.current > a:before {
+	color: #902d97;
+}

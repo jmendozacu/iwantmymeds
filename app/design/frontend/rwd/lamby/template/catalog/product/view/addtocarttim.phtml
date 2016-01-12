@@ -1,0 +1,104 @@
+<div class="add-to-cart">
+    <?php $_product = $this->getProduct(); ?>
+    <?php $buttonTitle = $this->__('Add to Cart'); ?>
+    <?php if($_product->isSaleable()): ?>
+        <div class="pull-left">
+            <div class="custom pull-left">
+                <label for="qty"><?php echo $this->__('Quantity') ?></label>
+                <?php if(!$_product->isGrouped()): ?>
+                    <input type="text" name="qty" id="qty"  maxlength="12" value="<?php echo $this->getProductDefaultQty() * 1 ?>" title="<?php echo $this->__('Quantity') ?>" class="input-text qty" />
+                    <button onClick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;" class="increase items-count" type="button"><i class="icon-plus">&nbsp;</i></button>
+                    <button onClick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 0 ) result.value--;return false;" class="reduced items-count" type="button"><i class="icon-minus">&nbsp;</i></button>
+                <?php endif; ?>
+                <?php echo $this->getChildHtml('', true, true) ?>
+            </div> <!--custom pull-left-->
+        </div> <!--pull-left-->
+    <?php endif; ?>
+    <div class="pull-right">
+        <?php if($_product->getData('is_prescription_product') == '1' && empty(Mage::getSingleton('core/session')->getPerscriptionCheck()) ): ?>
+            <a href="#more_info_popup" data-url="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart btn-more-info"><span><?php echo $this->__('Add to Cart') ?></span></a>
+            <script type="text/javascript">
+                jQuery(".btn-more-info").fancybox({
+                    'transitionIn' : 'none',
+                    'transitionOut' : 'none'
+                });
+                jQuery(".btn-more-info").click(function(){
+                    jQuery('#url_redirect_product').val(jQuery(this).attr('data-url'));
+                });
+            </script>
+        <?php else: ?>
+            <button type="button" title="<?php echo $buttonTitle ?>" class="button btn-cart" onclick="setLocation(<?php echo $this->getSubmitUrl($_product) ?>)"><span><?php echo $buttonTitle ?></span></button>
+        <?php endif; ?>
+
+    </div> <!--pull-right-->
+</div> <!--add-to-cart-->
+
+<?php  if(empty(Mage::getSingleton('core/session')->getPerscriptionCheck())): ?>
+    <div style="display: none;">
+        <div id="more_info_popup">
+            <h1>
+                Order your prescription medicine online
+            </h1>
+            <p>
+                We'll happily dispense this item from our online pharmacy if you have a prescription. Just enter the name that's on your prescription, select the option that's right for you and go through to the checkout. This way, you get the convenience of online ordering, with the confidence that comes from using one of the UK's most trusted pharmacies.
+            </p>
+            <form id="popup_prescriptioncheck_form" action="<?php echo Mage::getUrl('myprescription/index/prescriptioncheck') ?>" method="post">
+                <input type="hidden" name="url_redirect_product" id="url_redirect_product" value="">
+                <div class="box-1">
+                    <h2>What type of prescription do you have?</h2>
+                    <div class="checkbox">
+                        <input type="radio" class="prescription"  name="perscription_type" value="pay"><strong>NHS Prescription</strong><br>
+                    </div>
+
+                    <p>I need to pay for this NHS prescription</p>
+                    <div class="checkbox">
+                        <input type="radio" class="prescription" name="perscription_type" value="no_pay"><strong>NHS Prescription</strong><br>
+                    </div>
+                    <p>I dont need to pay for this NHS prescription</p>
+                    <div class="checkbox">
+                        <input type="radio" class="prescription" name="perscription_type" value="private"><strong>Private Prescription</strong><br>
+                    </div>
+                    <p>I have a private prescription</p>
+                    <p>Please enter the name as it is on the prescription</p>
+                    <input type="text" id="name_on_prescription" name="name_on_prescription"/>
+                    <p class="message-valid-name" style="display: none;color: #d90000"><?php echo $this->__('Please enter a valid patient name');?></p>
+                </div>
+                <a href="#" id="submit_pop_up_form" class="button btn-submit"><span><?php echo $this->__('Continue Order') ?></span></a>
+            </form>
+            <a href="<?php echo Mage::getBaseUrl().'more-info-page-one'?>"><span>I don't know if I need to pay for my prescription</span></a>
+            <br/>
+            <a href="<?php echo Mage::getBaseUrl().'more-info-page-tow'?>"><span>I don't have a prescription</span></a>
+        </div>
+        <script type="text/javascript">
+            jQuery('#submit_pop_up_form').click(function(){
+                if(jQuery('#name_on_prescription').val().length <= 0){
+                    jQuery('#name_on_prescription').focus();
+                    jQuery('.message-valid-name').show();
+                    return false;
+                }else{
+                    jQuery('.message-valid-name').hide();
+                }
+                jQuery('#magikloading').show();
+                jQuery.ajax( {
+                    type: "POST",
+                    url: '<?php echo Mage::getUrl('myprescription/index/prescriptioncheck') ?>',
+                    data: {perscription_type:jQuery('.prescription:checked').val(),name_on_prescription: jQuery('#name_on_prescription').val(),url_redirect_product:jQuery('#url_redirect_product').val()},
+                    success: function( response ) {
+                        jQuery('#magikloading').hide();
+                        if(response.success){
+                            window.location.href = response.url;
+                        }else{
+                            jQuery('#fancybox-close').click();
+                        }
+                    }
+                } );
+            });
+            jQuery('#more_info_popup div.checkbox').click(function(){
+                jQuery('#more_info_popup div.checkbox').removeAttr('id');
+                jQuery('input.prescription').removeAttr('checked');
+                jQuery(this).attr('id','checked');
+                jQuery('div#checked input.prescription').attr('checked','checked');
+            });
+        </script>
+    </div>
+<?php endif; ?>

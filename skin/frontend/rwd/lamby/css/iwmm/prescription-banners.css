@@ -1,0 +1,205 @@
+.prescription_banners {
+
+}
+
+.prescription_banners ul {
+	overflow: hidden;
+	font-size: 0;
+	line-height: 1;
+	text-align: center;
+	padding: 0;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.prescription_banners ul li {
+	width: 33.33%;
+	display: inline-block;
+	padding: 15px 15px;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.prescription_banner {
+	position: relative;
+	display: block;
+}
+
+.prescription_banner img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.prescription_banner_text {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+
+	padding: 30px 25px 0;
+	border: solid 4px rgba(255, 255, 255, .2);
+	transition: all .3s;
+
+	text-align: left;
+}
+
+.prescription_banner_text:hover {
+	background: rgba(0, 0, 0, .3);
+}
+
+.prescription_banner_title {
+	font-size: 22px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	line-height: 1;
+	height: 2em;
+}
+
+.prescription_banner_more {
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 25px;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	transition: all .3s;
+}
+
+/* prescription_banners_wide */
+
+.prescription_banners_wide {
+	border-top: solid 2px #eaeff2;
+	margin-top: 30px;
+}
+
+.prescription_banners_wide ul {
+	padding-top: 15px;
+}
+
+.prescription_banners_wide ul li {
+	width: 50%;
+}
+
+.prescription_banners_wide .prescription_banner_text {
+	padding-top: 25px;
+}
+
+.prescription_banners_wide .prescription_banner_title {
+	font-size: 18px;
+}
+
+.prescription_banners_wide .prescription_banner_more {
+	margin-top: 12px;
+}
+
+@media only screen and (max-width: 1169px) and (min-width: 978px) {
+	.prescription_banner_text {
+		padding: 20px 15px 0;
+	}
+
+	.prescription_banner_title {
+		font-size: 15px;
+	}
+
+	.prescription_banner_more {
+		margin-top: 15px;
+		font-size: 12px;
+	}
+
+	.prescription_banners_wide .prescription_banner_text {
+		padding-top: 15px;
+	}
+
+	.prescription_banners_wide .prescription_banner_more {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 977px) and (min-width: 768px) {
+	.prescription_banners ul li {
+		width: 50%;
+	}
+
+	.prescription_banner_text {
+		padding: 25px 25px 0;
+	}
+
+	.prescription_banner_title {
+	 	font-size: 18px;
+	}
+
+	.prescription_banner_more {
+		margin-top: 15px;
+	}
+
+	.prescription_banners_wide ul {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.prescription_banners_wide ul li {
+		width: auto;
+	}
+}
+
+@media only screen and (max-width: 767px) and (min-width: 568px) {
+	.prescription_banners ul li {
+		width: 50%;
+	}
+
+	.prescription_banners_wide ul {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.prescription_banners_wide ul li {
+		width: auto;
+	}
+}
+
+@media only screen and (max-width: 567px) and (min-width: 480px) {
+	.prescription_banners ul {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.prescription_banners ul li {
+		width: 100%;
+		padding: 0;
+		padding: 15px 0;
+	}
+
+	.prescription_banners ul li img {
+		width: 100%;
+	}
+
+	.prescription_banners_wide .prescription_banner_more {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 479px) and (min-width: 320px) {
+	.prescription_banners ul {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.prescription_banners ul li {
+		width: 100%;
+		padding: 0;
+		padding: 15px 0;
+	}
+
+	.prescription_banners ul li img {
+		width: 100%;
+	}
+
+	.prescription_banners_wide .prescription_banner_more {
+		display: none;
+	}
+}

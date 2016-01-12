@@ -1,0 +1,31 @@
+
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+<!DOCTYPE html>
+<html lang="<?php echo $this->getLang() ?>">
+<head>
+<?php echo $this->getChildHtml('head') ?>
+</head>
+
+<body class="<?php echo $this->getBodyClass()?' '.$this->getBodyClass().'':'' ?>">
+    <?php echo $this->getChildHtml('after_body_start') ?>
+    <?php echo $this->getChildHtml('global_notices') ?>      
+       <?php echo $this->getChildHtml('header') ?> 
+<!-- BEGIN Main Container -->  
+       <section class="main-container"> 
+          <?php echo $this->getChildHtml('breadcrumbs') ?>  
+<!-- BEGIN Main Container Inner-->
+          <article class="main-container-inner">                           
+              <?php echo $this->getChildHtml('global_messages') ?>
+              <?php echo $this->getChildHtml('content') ?>
+          </article> <!--main-container-inner-->
+      </section> <!--main-container-->
+     
+              <?php echo $this->getChildHtml('footer') ?>
+              <?php echo $this->getChildHtml('before_body_end') ?>
+              <?php echo $this->getAbsoluteFooter() ?> 
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+<?php $prescriptions = Mage::getResourceModel('prescriptioncheckout/prescription_collection'); ?>
+<?php
+  $prescription =  Mage::getSingleton('checkout/session')->getPrescriptionAttribute();
+  if (isset($prescription['prescription_id'])) {
+    $checking_value = $prescription['prescription_id'];
+  }
+
+?>
+<div >
+    <div id="prescription-popup">
+        <form method="post" id="prescription-form"
+              action="<?php echo $this->getBaseUrl() . 'prescriptioncheckout/index/cart?redr=1'; ?>">
+            <h1><strong>ORDER YOUR PRESCRIPTION ONLINE</strong></h1>
+            <input type="hidden" id="url_product" name="url_product" value="" />
+            <p><strong>Payment exemption details</strong></p>
+
+            <p>Please tick one of the boxes below to let us know why you (or the patient) aren't required to pay for
+                this prescription.</p>
+            <div class="box-1">
+                <h2>The patient doesn't have to pay because he/she:</h2>
+                <?php foreach ($prescriptions as $prescription) { ?>
+                    <?php
+                    $checked = '';
+                    if ($prescription->getPrescriptionId() == $checking_value) {
+                        $checked = 'checked';
+                    }
+                    ?>
+                    <div class="checkbox">
+                        <input type="radio" id="exemption-<?php echo $prescription->getPrescriptionId(); ?>" class="prescription"  name="exemption-type" value="<?php echo $prescription->getPrescriptionId(); ?>">
+                        <label for="exemption-<?php echo $prescription->getPrescriptionId(); ?>">
+                            <strong><?php echo $prescription->getTitle(); ?> - <?php echo $prescription->getDescriptions(); ?></strong><br>
+                        </label>
+                    </div>
+                <?php } ?>
+                <p class="message-valid-exemption" style="display: none;color: #d90000"><?php echo $this->__('Please choose an exemption type');?></p>
+            </div>
+            <br>
+            <a href="#" id="prescription-button" class="button btn-submit"><span><?php echo $this->__('Save Exemption') ?></span></a>
+        </form>
+    </div>
+</div>

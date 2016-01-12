@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ecommage_Accountloginredirect>
+            <version>0.1.0</version>
+        </Ecommage_Accountloginredirect>
+    </modules>
+    <frontend>
+        <routers>
+            <customer>
+                <args>
+                    <modules>
+                        <ecommage_accountloginredirect before="Mage_Customer">Ecommage_Accountloginredirect</ecommage_accountloginredirect>
+                    </modules>
+                </args>
+            </customer>
+        </routers>
+    </frontend>
+    <global>
+        <blocks>
+            <accountloginredirect>
+                <class>Ecommage_Accountloginredirect_Block</class>
+            </accountloginredirect>
+        </blocks>
+        <helpers>
+            <accountloginredirect>
+                <class>Ecommage_Accountloginredirect_Helper</class>
+            </accountloginredirect>
+        </helpers>
+    </global>
+</config>

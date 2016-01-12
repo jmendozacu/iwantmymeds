@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <myprescription translate="label" module="myprescription">
+            <label>Prescription Prices</label>
+            <tab>general</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>981</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general>
+                    <label>General</label>
+                    <frontend>text</frontend>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <pay translate="label">
+                            <label>Paid NHS Prescription Fee</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </pay>
+                        <no_pay translate="label">
+                            <label>Free NHS Prescription</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </no_pay>
+                        <private translate="label">
+                            <label>Private Prescription</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </private>
+                    </fields>
+                </general>
+            </groups>
+        </myprescription>
+    </sections>
+</config>

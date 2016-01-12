@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<config>
+    <menu>
+        <sales>
+            <children>
+                <ecommage_prescriptioncheckout translate="title" module="prescriptioncheckout">
+                    <sort_order>10</sort_order>
+                    <title>Management Prescription</title>
+                    <action>adminhtml/prescription/</action>
+                </ecommage_prescriptioncheckout>
+            </children>
+        </sales>
+    </menu>
+</config>

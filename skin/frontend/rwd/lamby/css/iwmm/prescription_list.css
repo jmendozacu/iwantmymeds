@@ -1,0 +1,120 @@
+.prescription_list {
+	background: url(../../images/iwmm/prescription_list.png) no-repeat left top;
+	min-height: 295px;
+	padding-left: 100px;
+	margin: 50px 0;
+	padding-top: 5px;
+	box-sizing: border-box;
+	max-width: 675px;
+
+	counter-reset: prescriptionlist;
+}
+
+.prescription_list ol {
+	padding: 0;
+	margin: 0;
+}
+
+.prescription_list ol li {
+	text-transform: uppercase;
+	color: #4c5962;
+	font-weight: bold;
+	list-style: none;
+	margin: 0;
+	position: relative;
+}
+
+.prescription_list ol li:before {
+	counter-increment: prescriptionlist;
+	content: "" counter(prescriptionlist) ".";
+	position: absolute;
+	top: 0;
+	left: -18px;
+	color: #902d97;
+}
+
+.prescription_list ol li + li {
+	margin-top: 33px;
+}
+
+.prescription_list.prescription_list2 {
+	min-height: 214px;
+	background: url(../../images/iwmm/prescription_list2.png) no-repeat left top;
+	padding-top: 4px;
+}
+
+.prescription_list.prescription_list2 ol li + li {
+	margin-top: 40px;
+}
+
+@media only screen and (max-width: 1169px) and (min-width: 978px) {
+	.prescription_list ol li + li {
+		margin-top: 31px;
+	}
+
+	.prescription_list.prescription_list2 ol li + li {
+		margin-top: 32px;
+	}
+}
+
+@media only screen and (max-width: 977px) and (min-width: 768px) {
+	.prescription_list ol li + li {
+		margin-top: 26px;
+	}
+
+	.prescription_list.prescription_list2 ol li + li {
+		margin-top: 17px;
+	}
+}
+
+@media only screen and (max-width: 767px) and (min-width: 568px) {
+	.prescription_list {
+		padding-top: 7px;
+	}
+
+	.prescription_list ol li + li {
+		margin-top: 30px;
+	}
+
+	.prescription_list.prescription_list2 ol li + li {
+		margin-top: 18px;
+	}
+}
+
+@media only screen and (max-width: 567px) and (min-width: 480px) {
+	.prescription_list {
+		padding-top: 9px;
+		margin: 30px 0;
+	}
+
+	.prescription_list ol li {
+		font-size: 11px;
+	}
+
+	.prescription_list ol li + li {
+		margin-top: 20px;
+	}
+
+	.prescription_list.prescription_list2 ol li + li {
+		margin-top: 16px;
+	}
+}
+
+@media only screen and (max-width: 479px) and (min-width: 320px) {
+	.prescription_list {
+		padding-top: 9px;
+		margin: 30px 0;
+	}
+
+	.prescription_list ol li {
+		font-size: 11px;
+	}
+
+	.prescription_list ol li + li {
+		margin-top: 20px;
+	}
+
+	.prescription_list.prescription_list2 ol li + li {
+		margin-top: 16px;
+	}
+}

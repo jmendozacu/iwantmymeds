@@ -1,0 +1,56 @@
+
+    <?php $_cartQty = $this->getSummaryCount() ?>
+    <?php $_items = $this->getRecentItems(); ?>
+
+    <?php if(count($_items)): ?>
+    	<div class="block-content">
+
+			<?php if ($tmp_html = $this->getChildHtml('i_block_mini_cart_above_products')): ?> <?php //Predefined CMS block ?>
+                <div class="mini-cart-above-products-wrapper"><?php echo $tmp_html; ?></div>
+            <?php endif; ?>
+
+            <p class="block-subtitle"><?php echo $this->__('Recently added item(s)') ?></p>
+            <ul id="cart-sidebar" class="mini-products-list">
+                <?php $check = 0; ?>
+                <?php foreach($_items as $_item): ?>
+                <?php
+                    // checking on cart had product prescription
+                    $id = $_item->getProduct()->getId();
+                    $product = Mage::getModel('catalog/product')->load($id);
+                    if (isset($product['is_prescription_product'])) {
+                        if ($product['is_prescription_product'] == 1) {
+                            $prescription =  Mage::getSingleton('checkout/session')->getPrescriptionAttribute();
+                                if (count($prescription) == 0) {
+                                    $check ++;
+                                }
+                        }
+                    }
+
+                ?>
+                    <?php echo $this->getItemHtml($_item) ?>
+                <?php endforeach; ?>
+            </ul>
+            <div class="top-subtotal">
+                 <?php echo $this->__('Subtotal:');?>
+                 <?php echo Mage::helper('checkout')->formatPrice($this->getSubtotal()) ?>
+            </div> <!--top-subtotal-->
+            <script type="text/javascript">decorateList('cart-sidebar', 'none-recursive')</script>
+            <div class="actions">
+              <button type="button" class="view-cart" onclick="window.location='<?php echo $this->getUrl('checkout/cart') ?>';" title="<?php echo $this->__('View Cart') ?>" ><span><?php echo $this->__('View Cart') ?></span></button>
+              <?php if ($check == 0): ?>
+                    <button type="button" title="<?php echo $this->__('Checkout') ?>" class="btn-checkout" onclick="window.location='<?php echo $this->getCheckoutUrl() ?>';"><span><?php echo $this->__('Checkout') ?></span></button>
+              <?php endif ?>
+
+            </div>  <!--actions-->
+
+        </div>
+    <?php else: ?>
+    	<div class="block-content">
+
+        	<?php if ($tmp_html = $this->getChildHtml('i_block_mini_cart_above_products')): ?> <?php //Predefined CMS block ?>
+                <div class="mini-cart-above-products-wrapper"><?php echo $tmp_html; ?></div>
+			<?php else: ?>
+            	<p class="a-center noitem"><?php echo $this->__('You have no items in your shopping cart.') ?></p>
+            <?php endif; ?>
+		</div>
+    <?php endif ?>

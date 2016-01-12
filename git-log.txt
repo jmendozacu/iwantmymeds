@@ -1,0 +1,2142 @@
+
+*********************** 06-05-2015 03:24:52 ***********************
+
+Updating 4f031da..d705187
+Fast-forward
+ 127_0_0_1.sql    | 124449 ----------------------------------------------------
+ index.php.sample |     71 -
+ 2 files changed, 124520 deletions(-)
+ delete mode 100644 127_0_0_1.sql
+ delete mode 100644 index.php.sample
+
+
+*********************** 06-08-2015 14:52:55 ***********************
+
+Updating d705187..995af6a
+Fast-forward
+ app/design/frontend/rwd/lamby/template/page/html/header.phtml | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+
+*********************** 06-08-2015 18:17:14 ***********************
+
+Updating 995af6a..fa485ad
+Fast-forward
+ .../Adminhtml/Shipping/Carrier/Matrixrate/Grid.php | 153 ++++++++
+ .../System/Config/Form/Field/Exportmatrix.php      |  61 ++++
+ .../Webshopapps/Matrixrate/Helper/Data.php         |  60 ++++
+ .../System/Config/Backend/Shipping/Matrixrate.php  |  37 ++
+ .../System/Config/Source/Shipping/Matrixrate.php   |  42 +++
+ .../Matrixrate/Model/Carrier/Matrixrate.php        | 219 ++++++++++++
+ .../Matrixrate/Model/Mysql4/Carrier/Matrixrate.php | 389 +++++++++++++++++++++
+ .../Model/Mysql4/Carrier/Matrixrate/Collection.php |  68 ++++
+ .../community/Webshopapps/Matrixrate/changelog.txt |   3 +
+ .../controllers/System/ConfigController.php        |  59 ++++
+ .../Webshopapps/Matrixrate/etc/config.xml          | 158 +++++++++
+ .../Webshopapps/Matrixrate/etc/system.xml          | 248 +++++++++++++
+ .../sql/matrixrate_setup/mysql4-install-2.0.1.php  |  34 ++
+ .../sql/matrixrate_setup/mysql4-install-2.0.2.php  |  33 ++
+ .../mysql4-upgrade-2.0.1-2.0.2.php                 |  33 ++
+ app/etc/modules/Webshopapps_Matrixrate.xml         |  12 +
+ 16 files changed, 1609 insertions(+)
+ create mode 100644 app/code/community/Webshopapps/Matrixrate/Block/Adminhtml/Shipping/Carrier/Matrixrate/Grid.php
+ create mode 100644 app/code/community/Webshopapps/Matrixrate/Block/Adminhtml/System/Config/Form/Field/Exportmatrix.php
+ create mode 100644 app/code/community/Webshopapps/Matrixrate/Helper/Data.php
+ create mode 100644 app/code/community/Webshopapps/Matrixrate/Model/Adminhtml/System/Config/Backend/Shipping/Matrixrate.php
+ create mode 100644 app/code/community/Webshopapps/Matrixrate/Model/Adminhtml/System/Config/Source/Shipping/Matrixrate.php
+ create mode 100644 app/code/community/Webshopapps/Matrixrate/Model/Carrier/Matrixrate.php
+ create mode 100644 app/code/community/Webshopapps/Matrixrate/Model/Mysql4/Carrier/Matrixrate.php
+ create mode 100644 app/code/community/Webshopapps/Matrixrate/Model/Mysql4/Carrier/Matrixrate/Collection.php
+ create mode 100644 app/code/community/Webshopapps/Matrixrate/changelog.txt
+ create mode 100644 app/code/community/Webshopapps/Matrixrate/controllers/System/ConfigController.php
+ create mode 100644 app/code/community/Webshopapps/Matrixrate/etc/config.xml
+ create mode 100644 app/code/community/Webshopapps/Matrixrate/etc/system.xml
+ create mode 100644 app/code/community/Webshopapps/Matrixrate/sql/matrixrate_setup/mysql4-install-2.0.1.php
+ create mode 100644 app/code/community/Webshopapps/Matrixrate/sql/matrixrate_setup/mysql4-install-2.0.2.php
+ create mode 100644 app/code/community/Webshopapps/Matrixrate/sql/matrixrate_setup/mysql4-upgrade-2.0.1-2.0.2.php
+ create mode 100644 app/etc/modules/Webshopapps_Matrixrate.xml
+
+
+*********************** 06-08-2015 18:28:01 ***********************
+
+Updating fa485ad..a3aa5d6
+
+
+*********************** 06-08-2015 18:30:30 ***********************
+
+Updating fa485ad..a3aa5d6
+
+
+*********************** 06-08-2015 18:31:24 ***********************
+
+Updating fa485ad..a3aa5d6
+
+
+*********************** 06-08-2015 18:31:43 ***********************
+
+Updating fa485ad..7c0abfd
+
+
+*********************** 06-08-2015 18:35:09 ***********************
+
+Updating fa485ad..7c0abfd
+
+
+*********************** 06-08-2015 18:42:54 ***********************
+
+Updating fa485ad..7c0abfd
+
+
+*********************** 06-08-2015 18:43:19 ***********************
+
+Updating fa485ad..7c0abfd
+
+
+*********************** 06-08-2015 18:43:40 ***********************
+
+Updating fa485ad..9043b19
+
+
+*********************** 06-09-2015 14:40:23 ***********************
+
+Updating fa485ad..9043b19
+
+
+*********************** 06-09-2015 14:43:56 ***********************
+
+Updating fa485ad..9043b19
+
+
+*********************** 06-09-2015 14:44:26 ***********************
+
+Updating fa485ad..9043b19
+
+
+*********************** 06-09-2015 14:44:50 ***********************
+
+Updating fa485ad..61d1a1c
+
+
+*********************** 06-10-2015 14:03:49 ***********************
+
+Updating fa485ad..61d1a1c
+
+
+*********************** 06-10-2015 14:12:58 ***********************
+
+Updating fa485ad..61d1a1c
+
+
+*********************** 06-10-2015 14:26:19 ***********************
+
+Updating fa485ad..61d1a1c
+
+
+*********************** 06-10-2015 15:54:35 ***********************
+
+Updating fa485ad..61d1a1c
+
+
+*********************** 06-10-2015 16:02:15 ***********************
+
+Updating fa485ad..61d1a1c
+
+
+*********************** 06-10-2015 16:08:21 ***********************
+
+Updating fa485ad..d0eb187
+
+
+*********************** 06-11-2015 16:34:20 ***********************
+
+Updating fa485ad..d0eb187
+
+
+*********************** 06-11-2015 19:22:50 ***********************
+
+Updating fa485ad..d0eb187
+
+
+*********************** 06-11-2015 19:23:22 ***********************
+
+Updating fa485ad..d0eb187
+
+
+*********************** 06-11-2015 19:23:38 ***********************
+
+Updating fa485ad..c374664
+
+
+*********************** 06-12-2015 17:07:11 ***********************
+
+Updating fa485ad..c374664
+Fast-forward
+ app/code/community/Bubble/Debug/Model/Observer.php | 274 +++++++
+ app/code/community/Bubble/Debug/etc/config.xml     |  53 ++
+ app/code/local/Bubble/CodeReview/Helper/Data.php   |  32 +
+ .../local/Bubble/CodeReview/Model/Observer.php     |  19 +
+ .../CodeReview/controllers/DebugController.php     |  33 +
+ app/code/local/Bubble/CodeReview/etc/config.xml    |  36 +
+ .../controllers/Checkout/CartController.php        |  58 ++
+ .../Additemtocart/controllers/IndexController.php  |  25 +
+ .../local/Ecommage/Additemtocart/etc/config.xml    |  34 +
+ .../Myprescription/Block/myprescription.php        |   6 +
+ .../local/Ecommage/Myprescription/Helper/data.php  |   4 +
+ .../Myprescription/controllers/IndexController.php |  50 ++
+ .../local/Ecommage/Myprescription/etc/config.xml   |  39 +
+ .../local/Moeroas/Commercebug/1.3.releasenotes.txt |  15 +
+ .../local/Moeroas/Commercebug/1.4.releasenotes.txt |  13 +
+ .../local/Moeroas/Commercebug/1.5.releasenotes.txt |   5 +
+ .../local/Moeroas/Commercebug/2.0.releasenotes.txt |  27 +
+ .../Moeroas/Commercebug/2.1.0.releasenotes.txt     |  26 +
+ .../Moeroas/Commercebug/2.1.1.releasenotes.txt     |   6 +
+ .../local/Moeroas/Commercebug/2.2.releasenotes.txt |   4 +
+ .../Moeroas/Commercebug/2.3.0.releasenotes.txt     |   7 +
+ .../local/Moeroas/Commercebug/Block/Alltabs.php    |  50 ++
+ .../local/Moeroas/Commercebug/Block/Example.php    |   8 +
+ app/code/local/Moeroas/Commercebug/Block/Html.php  | 216 +++++
+ .../Moeroas/Commercebug/Block/Jquery/Bodyend.php   |  75 ++
+ .../Moeroas/Commercebug/Block/Jquery/Head.php      |  18 +
+ .../local/Moeroas/Commercebug/Block/Tab/404.php    |  12 +
+ .../local/Moeroas/Commercebug/Block/Tab/Blocks.php |  12 +
+ .../Moeroas/Commercebug/Block/Tab/Collections.php  |  12 +
+ .../Moeroas/Commercebug/Block/Tab/Controllers.php  |  12 +
+ .../Moeroas/Commercebug/Block/Tab/Corescan.php     |  55 ++
+ .../local/Moeroas/Commercebug/Block/Tab/Events.php |   7 +
+ .../local/Moeroas/Commercebug/Block/Tab/Layout.php |  12 +
+ .../local/Moeroas/Commercebug/Block/Tab/Lookup.php |  12 +
+ .../local/Moeroas/Commercebug/Block/Tab/Models.php |  12 +
+ .../Moeroas/Commercebug/Block/Tab/Observers.php    |   7 +
+ .../local/Moeroas/Commercebug/Block/Tab/Other.php  |   8 +
+ .../Moeroas/Commercebug/Block/Tab/Systemtasks.php  |  12 +
+ .../local/Moeroas/Commercebug/Block/Tab/Test.php   |  12 +
+ .../Moeroas/Commercebug/Block/Tab/Welcome.php      |  12 +
+ app/code/local/Moeroas/Commercebug/CB_Manual.txt   | 308 +++++++
+ .../Commercebug/Controller/Adminhtml/Adminajax.php |   6 +
+ .../local/Moeroas/Commercebug/Controller/Ajax.php  |   6 +
+ .../local/Moeroas/Commercebug/Helper/Abstract.php  |  36 +
+ .../Moeroas/Commercebug/Helper/Cacheclearer.php    |  17 +
+ .../Moeroas/Commercebug/Helper/Classurilookup.php  |  44 +
+ .../local/Moeroas/Commercebug/Helper/Collector.php |  13 +
+ .../local/Moeroas/Commercebug/Helper/Counter.php   |  14 +
+ app/code/local/Moeroas/Commercebug/Helper/Data.php |  31 +
+ .../Commercebug/Helper/Formatlog/Allsimple.php     | 174 ++++
+ .../Moeroas/Commercebug/Helper/Formatlog/Raw.php   |  12 +
+ app/code/local/Moeroas/Commercebug/Helper/Log.php  |  32 +
+ .../local/Moeroas/Commercebug/Model/404/Lint.php   | 311 +++++++
+ .../Moeroas/Commercebug/Model/Ajaxresponse.php     |  20 +
+ .../local/Moeroas/Commercebug/Model/Collector.php  |  68 ++
+ .../Commercebug/Model/Collectorblocksandlayout.php |  64 ++
+ .../Commercebug/Model/Collectorcollections.php     |  60 ++
+ .../Commercebug/Model/Collectorcontroller.php      |  48 ++
+ .../Moeroas/Commercebug/Model/Collectorevents.php  | 103 +++
+ .../Moeroas/Commercebug/Model/Collectorfiles.php   |  27 +
+ .../Commercebug/Model/Collectorgraphviz.php        |  24 +
+ .../Moeroas/Commercebug/Model/Collectormodels.php  |  40 +
+ .../Commercebug/Model/Collectorsysteminfo.php      | 111 +++
+ .../Commercebug/Model/Configaccessclass.php        |  18 +
+ .../Commercebug/Model/Corescan/External.php        |  68 ++
+ .../Moeroas/Commercebug/Model/Crossareaajax.php    | 180 ++++
+ .../Commercebug/Model/Crossareaajax/Clearcache.php |  13 +
+ .../Model/Crossareaajax/Lookupclass.php            |  34 +
+ .../Model/Crossareaajax/Lookupmage2class.php       |  36 +
+ .../Commercebug/Model/Crossareaajax/Lookupuri.php  |  62 ++
+ .../Model/Crossareaajax/Toggleblockhints.php       |  15 +
+ .../Model/Crossareaajax/Togglecblogging.php        |  15 +
+ .../Model/Crossareaajax/Togglehints.php            |  15 +
+ .../Model/Crossareaajax/Togglemagelogging.php      |  15 +
+ .../Model/Crossareaajax/Toggletranslation.php      |  18 +
+ .../Moeroas/Commercebug/Model/Designpathinfo.php   | 142 ++++
+ .../Moeroas/Commercebug/Model/Developerip.php      |  20 +
+ .../Moeroas/Commercebug/Model/Event/Manager.php    |  36 +
+ .../local/Moeroas/Commercebug/Model/Events.php     | 103 +++
+ app/code/local/Moeroas/Commercebug/Model/Files.php |  32 +
+ .../local/Moeroas/Commercebug/Model/Graphviz.php   |  20 +
+ .../Moeroas/Commercebug/Model/Interface/Ison.php   |   8 +
+ .../local/Moeroas/Commercebug/Model/Invoker.php    |  23 +
+ app/code/local/Moeroas/Commercebug/Model/Ison.php  |  20 +
+ .../local/Moeroas/Commercebug/Model/Jslabels.php   | 100 +++
+ .../local/Moeroas/Commercebug/Model/Jsonbroker.php |  20 +
+ .../Moeroas/Commercebug/Model/Layout/Update.php    |  16 +
+ .../Commercebug/Model/Layoutviewer/Observer.php    | 118 +++
+ .../local/Moeroas/Commercebug/Model/Observer.php   | 276 +++++++
+ .../Moeroas/Commercebug/Model/Observer/Dot.php     | 239 ++++++
+ .../Commercebug/Model/Observingcollector.php       | 109 +++
+ .../Commercebug/Model/Resource/Mysql4/Setup.php    |  13 +
+ .../local/Moeroas/Commercebug/Model/Session.php    |  11 +
+ app/code/local/Moeroas/Commercebug/Model/Shim.php  | 333 ++++++++
+ .../System/Config/Source/Log/Format/Classes.php    |  15 +
+ .../controllers/AdminajaxController.php            |  68 ++
+ .../Commercebug/controllers/AjaxController.php     | 170 ++++
+ .../controllers/CollectionController.php           |  18 +
+ .../Commercebug/controllers/IndexController.php    |  12 +
+ .../Commercebug/controllers/SnapshotController.php |  62 ++
+ .../local/Moeroas/Commercebug/etc/adminhtml.xml    |  23 +
+ .../Moeroas/Commercebug/etc/adminhtml/acl.xml      |   2 +
+ .../Moeroas/Commercebug/etc/adminhtml/routes.xml   |   8 +
+ .../local/Moeroas/Commercebug/etc/commercebug.xml  |  74 ++
+ .../Moeroas/Commercebug/etc/config-magento2.xml    |  51 ++
+ app/code/local/Moeroas/Commercebug/etc/config.xml  | 348 ++++++++
+ app/code/local/Moeroas/Commercebug/etc/di.xml      |   4 +
+ app/code/local/Moeroas/Commercebug/etc/events.xml  |  41 +
+ .../Moeroas/Commercebug/etc/frontend/routes.xml    |   7 +
+ app/code/local/Moeroas/Commercebug/etc/module.xml  |   9 +
+ app/code/local/Moeroas/Commercebug/etc/system.xml  | 131 +++
+ .../locale/Alanstormdotcom_Commercebug.csv         |   1 +
+ .../local/Moeroas/Commercebug/magento2-install.md  |  25 +
+ .../Commercebug/manual/Commercebug_Manual.epub     | Bin 0 -> 16844 bytes
+ .../Commercebug/manual/Commercebug_Manual.html     | 226 +++++
+ .../Commercebug/manual/Commercebug_Manual.mobi     | Bin 0 -> 22277 bytes
+ .../namespace-protection/getBaseDir.php            |   4 +
+ .../namespace-protection/getObjectManager.php      |   3 +
+ .../Commercebug/namespace-protection/isAdmin.php   |   3 +
+ app/code/local/Moeroas/Commercebug/package.php     |  98 +++
+ .../sql/commercebug_setup/mysql4-install-1.2.0.php |  26 +
+ .../mysql4-upgrade-1.2.0-1.5.0.php                 |  12 +
+ .../mysql4-upgrade-1.3.0-1.5.0.php                 |  12 +
+ .../mysql4-upgrade-1.4.0-1.5.0.php                 |  10 +
+ app/code/local/Zend/Db/Adapter/Pdo/Abstract.php    | 411 ++++++++++
+ .../frontend/rwd/lamby/layout/myprescription.xml   |  13 +
+ .../rwd/lamby/template/catalog/product/list.phtml  |  46 +-
+ .../template/catalog/product/list/related.phtml    | 319 ++++---
+ .../template/catalog/product/list/upsell.phtml     | 279 ++++---
+ .../rwd/lamby/template/checkout/cart.phtml         |  11 +-
+ .../template/myprescription/myprescription.phtml   |   3 +
+ .../rwd/lamby/template/page/html/header.phtml      |   2 +-
+ app/etc/modules/Bubble_CodeReview.xml              |  12 +
+ app/etc/modules/Bubble_Debug.xml                   |   9 +
+ app/etc/modules/Ecommage_Additemtocart.xml         |   9 +
+ app/etc/modules/Ecommage_Myprescription.xml        |   9 +
+ app/etc/modules/Ecommage_Myscription.xml           |   0
+ app/etc/modules/Moeroas_Commercebug.xml            |   1 +
+ js/Ecommage/myprescription/call-ajax.js            |  19 +
+ js/commercebug/Pulsestorm_Html_Table.js            | 249 ++++++
+ js/commercebug/commercebug-2-0-1.css               | 198 +++++
+ js/commercebug/commercebug.1.4.js                  | 324 ++++++++
+ js/commercebug/commercebug.1.6.js                  | 871 ++++++++++++++++++++
+ js/commercebug/commercebug.css                     | 149 ++++
+ js/commercebug/images/loader.gif                   | Bin 0 -> 3951 bytes
+ js/commercebug/index-of.js                         |  36 +
+ .../overcast/images/ui-bg_flat_0_aaaaaa_40x100.png | Bin 0 -> 180 bytes
+ .../overcast/images/ui-bg_flat_0_eeeeee_40x100.png | Bin 0 -> 180 bytes
+ .../images/ui-bg_flat_55_c0402a_40x100.png         | Bin 0 -> 213 bytes
+ .../images/ui-bg_flat_55_eeeeee_40x100.png         | Bin 0 -> 180 bytes
+ .../images/ui-bg_glass_100_f8f8f8_1x400.png        | Bin 0 -> 105 bytes
+ .../images/ui-bg_glass_35_dddddd_1x400.png         | Bin 0 -> 109 bytes
+ .../images/ui-bg_glass_60_eeeeee_1x400.png         | Bin 0 -> 110 bytes
+ .../images/ui-bg_inset-hard_75_999999_1x100.png    | Bin 0 -> 114 bytes
+ .../images/ui-bg_inset-soft_50_c9c9c9_1x100.png    | Bin 0 -> 142 bytes
+ .../overcast/images/ui-icons_3383bb_256x240.png    | Bin 0 -> 4369 bytes
+ .../overcast/images/ui-icons_454545_256x240.png    | Bin 0 -> 4369 bytes
+ .../overcast/images/ui-icons_70b2e1_256x240.png    | Bin 0 -> 5355 bytes
+ .../overcast/images/ui-icons_999999_256x240.png    | Bin 0 -> 4369 bytes
+ .../overcast/images/ui-icons_fbc856_256x240.png    | Bin 0 -> 4369 bytes
+ .../css/overcast/jquery-ui-1.8.custom.css          | 480 +++++++++++
+ .../css/overcast/jquery-ui-1.8.custom.css.backup   | 480 +++++++++++
+ .../css/tablesorter/blue/asc.gif                   | Bin 0 -> 54 bytes
+ .../css/tablesorter/blue/bg.gif                    | Bin 0 -> 64 bytes
+ .../css/tablesorter/blue/desc.gif                  | Bin 0 -> 54 bytes
+ .../css/tablesorter/blue/style.css                 |  40 +
+ js/commercebug/jquery-ui-1.8.custom/index.html     | 367 +++++++++
+ .../jquery-ui-1.8.custom/js/jquery-1.4.2.min.js    | 154 ++++
+ .../jquery-ui-1.8.custom/js/jquery-1.8.1.min.js    |   3 +
+ .../js/jquery-ui-1.8.custom.min.js                 | 404 +++++++++
+ .../jquery-ui-1.8.custom/js/jquery.cookie.js       |  96 +++
+ .../js/jquery.tablesorter.min.js                   |   2 +
+ js/commercebug/plugins/jquery.form.js              | 785 ++++++++++++++++++
+ lib/Bubble/Output/Renderer.php                     |  26 +
+ lib/Bubble/Output/Renderer/Abstract.php            | 217 +++++
+ lib/Bubble/Output/Renderer/Cli.php                 |  28 +
+ lib/Bubble/Output/Renderer/Html.php                |  85 ++
+ shell/review.php                                   | 913 +++++++++++++++++++++
+ skin/frontend/rwd/lamby/css/iwmm/products-grid.css |   2 +-
+ skin/frontend/rwd/lamby/css/styles.css             |   8 +-
+ 180 files changed, 13302 insertions(+), 248 deletions(-)
+ create mode 100644 app/code/community/Bubble/Debug/Model/Observer.php
+ create mode 100644 app/code/community/Bubble/Debug/etc/config.xml
+ create mode 100644 app/code/local/Bubble/CodeReview/Helper/Data.php
+ create mode 100644 app/code/local/Bubble/CodeReview/Model/Observer.php
+ create mode 100644 app/code/local/Bubble/CodeReview/controllers/DebugController.php
+ create mode 100644 app/code/local/Bubble/CodeReview/etc/config.xml
+ create mode 100644 app/code/local/Ecommage/Additemtocart/controllers/Checkout/CartController.php
+ create mode 100644 app/code/local/Ecommage/Additemtocart/controllers/IndexController.php
+ create mode 100644 app/code/local/Ecommage/Additemtocart/etc/config.xml
+ create mode 100644 app/code/local/Ecommage/Myprescription/Block/myprescription.php
+ create mode 100644 app/code/local/Ecommage/Myprescription/Helper/data.php
+ create mode 100644 app/code/local/Ecommage/Myprescription/controllers/IndexController.php
+ create mode 100644 app/code/local/Ecommage/Myprescription/etc/config.xml
+ create mode 100644 app/code/local/Moeroas/Commercebug/1.3.releasenotes.txt
+ create mode 100644 app/code/local/Moeroas/Commercebug/1.4.releasenotes.txt
+ create mode 100644 app/code/local/Moeroas/Commercebug/1.5.releasenotes.txt
+ create mode 100644 app/code/local/Moeroas/Commercebug/2.0.releasenotes.txt
+ create mode 100644 app/code/local/Moeroas/Commercebug/2.1.0.releasenotes.txt
+ create mode 100644 app/code/local/Moeroas/Commercebug/2.1.1.releasenotes.txt
+ create mode 100644 app/code/local/Moeroas/Commercebug/2.2.releasenotes.txt
+ create mode 100644 app/code/local/Moeroas/Commercebug/2.3.0.releasenotes.txt
+ create mode 100644 app/code/local/Moeroas/Commercebug/Block/Alltabs.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Block/Example.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Block/Html.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Block/Jquery/Bodyend.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Block/Jquery/Head.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Block/Tab/404.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Block/Tab/Blocks.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Block/Tab/Collections.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Block/Tab/Controllers.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Block/Tab/Corescan.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Block/Tab/Events.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Block/Tab/Layout.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Block/Tab/Lookup.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Block/Tab/Models.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Block/Tab/Observers.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Block/Tab/Other.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Block/Tab/Systemtasks.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Block/Tab/Test.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Block/Tab/Welcome.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/CB_Manual.txt
+ create mode 100644 app/code/local/Moeroas/Commercebug/Controller/Adminhtml/Adminajax.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Controller/Ajax.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Helper/Abstract.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Helper/Cacheclearer.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Helper/Classurilookup.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Helper/Collector.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Helper/Counter.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Helper/Data.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Helper/Formatlog/Allsimple.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Helper/Formatlog/Raw.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Helper/Log.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/404/Lint.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Ajaxresponse.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Collector.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Collectorblocksandlayout.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Collectorcollections.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Collectorcontroller.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Collectorevents.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Collectorfiles.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Collectorgraphviz.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Collectormodels.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Collectorsysteminfo.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Configaccessclass.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Corescan/External.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Crossareaajax.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Crossareaajax/Clearcache.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Crossareaajax/Lookupclass.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Crossareaajax/Lookupmage2class.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Crossareaajax/Lookupuri.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Crossareaajax/Toggleblockhints.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Crossareaajax/Togglecblogging.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Crossareaajax/Togglehints.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Crossareaajax/Togglemagelogging.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Crossareaajax/Toggletranslation.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Designpathinfo.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Developerip.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Event/Manager.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Events.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Files.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Graphviz.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Interface/Ison.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Invoker.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Ison.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Jslabels.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Jsonbroker.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Layout/Update.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Layoutviewer/Observer.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Observer.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Observer/Dot.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Observingcollector.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Resource/Mysql4/Setup.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Session.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/Shim.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/Model/System/Config/Source/Log/Format/Classes.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/controllers/AdminajaxController.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/controllers/AjaxController.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/controllers/CollectionController.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/controllers/IndexController.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/controllers/SnapshotController.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/etc/adminhtml.xml
+ create mode 100644 app/code/local/Moeroas/Commercebug/etc/adminhtml/acl.xml
+ create mode 100644 app/code/local/Moeroas/Commercebug/etc/adminhtml/routes.xml
+ create mode 100644 app/code/local/Moeroas/Commercebug/etc/commercebug.xml
+ create mode 100644 app/code/local/Moeroas/Commercebug/etc/config-magento2.xml
+ create mode 100644 app/code/local/Moeroas/Commercebug/etc/config.xml
+ create mode 100644 app/code/local/Moeroas/Commercebug/etc/di.xml
+ create mode 100644 app/code/local/Moeroas/Commercebug/etc/events.xml
+ create mode 100644 app/code/local/Moeroas/Commercebug/etc/frontend/routes.xml
+ create mode 100644 app/code/local/Moeroas/Commercebug/etc/module.xml
+ create mode 100644 app/code/local/Moeroas/Commercebug/etc/system.xml
+ create mode 100644 app/code/local/Moeroas/Commercebug/locale/Alanstormdotcom_Commercebug.csv
+ create mode 100644 app/code/local/Moeroas/Commercebug/magento2-install.md
+ create mode 100644 app/code/local/Moeroas/Commercebug/manual/Commercebug_Manual.epub
+ create mode 100644 app/code/local/Moeroas/Commercebug/manual/Commercebug_Manual.html
+ create mode 100644 app/code/local/Moeroas/Commercebug/manual/Commercebug_Manual.mobi
+ create mode 100644 app/code/local/Moeroas/Commercebug/namespace-protection/getBaseDir.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/namespace-protection/getObjectManager.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/namespace-protection/isAdmin.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/package.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/sql/commercebug_setup/mysql4-install-1.2.0.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/sql/commercebug_setup/mysql4-upgrade-1.2.0-1.5.0.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/sql/commercebug_setup/mysql4-upgrade-1.3.0-1.5.0.php
+ create mode 100644 app/code/local/Moeroas/Commercebug/sql/commercebug_setup/mysql4-upgrade-1.4.0-1.5.0.php
+ create mode 100644 app/code/local/Zend/Db/Adapter/Pdo/Abstract.php
+ create mode 100644 app/design/frontend/rwd/lamby/layout/myprescription.xml
+ create mode 100644 app/design/frontend/rwd/lamby/template/myprescription/myprescription.phtml
+ create mode 100644 app/etc/modules/Bubble_CodeReview.xml
+ create mode 100644 app/etc/modules/Bubble_Debug.xml
+ create mode 100644 app/etc/modules/Ecommage_Additemtocart.xml
+ create mode 100644 app/etc/modules/Ecommage_Myprescription.xml
+ create mode 100644 app/etc/modules/Ecommage_Myscription.xml
+ create mode 100644 app/etc/modules/Moeroas_Commercebug.xml
+ create mode 100644 js/Ecommage/myprescription/call-ajax.js
+ create mode 100644 js/commercebug/Pulsestorm_Html_Table.js
+ create mode 100644 js/commercebug/commercebug-2-0-1.css
+ create mode 100644 js/commercebug/commercebug.1.4.js
+ create mode 100644 js/commercebug/commercebug.1.6.js
+ create mode 100644 js/commercebug/commercebug.css
+ create mode 100644 js/commercebug/images/loader.gif
+ create mode 100644 js/commercebug/index-of.js
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/css/overcast/images/ui-bg_flat_0_aaaaaa_40x100.png
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/css/overcast/images/ui-bg_flat_0_eeeeee_40x100.png
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/css/overcast/images/ui-bg_flat_55_c0402a_40x100.png
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/css/overcast/images/ui-bg_flat_55_eeeeee_40x100.png
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/css/overcast/images/ui-bg_glass_100_f8f8f8_1x400.png
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/css/overcast/images/ui-bg_glass_35_dddddd_1x400.png
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/css/overcast/images/ui-bg_glass_60_eeeeee_1x400.png
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/css/overcast/images/ui-bg_inset-hard_75_999999_1x100.png
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/css/overcast/images/ui-bg_inset-soft_50_c9c9c9_1x100.png
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/css/overcast/images/ui-icons_3383bb_256x240.png
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/css/overcast/images/ui-icons_454545_256x240.png
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/css/overcast/images/ui-icons_70b2e1_256x240.png
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/css/overcast/images/ui-icons_999999_256x240.png
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/css/overcast/images/ui-icons_fbc856_256x240.png
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/css/overcast/jquery-ui-1.8.custom.css
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/css/overcast/jquery-ui-1.8.custom.css.backup
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/css/tablesorter/blue/asc.gif
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/css/tablesorter/blue/bg.gif
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/css/tablesorter/blue/desc.gif
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/css/tablesorter/blue/style.css
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/index.html
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/js/jquery-1.4.2.min.js
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/js/jquery-1.8.1.min.js
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/js/jquery-ui-1.8.custom.min.js
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/js/jquery.cookie.js
+ create mode 100644 js/commercebug/jquery-ui-1.8.custom/js/jquery.tablesorter.min.js
+ create mode 100644 js/commercebug/plugins/jquery.form.js
+ create mode 100644 lib/Bubble/Output/Renderer.php
+ create mode 100644 lib/Bubble/Output/Renderer/Abstract.php
+ create mode 100644 lib/Bubble/Output/Renderer/Cli.php
+ create mode 100644 lib/Bubble/Output/Renderer/Html.php
+ create mode 100644 shell/review.php
+
+
+*********************** 06-14-2015 01:52:02 ***********************
+
+Updating c374664..a2df7bc
+
+
+*********************** 06-14-2015 01:55:01 ***********************
+
+Updating c374664..a2df7bc
+
+
+*********************** 06-14-2015 01:55:48 ***********************
+
+Updating c374664..a2df7bc
+
+
+*********************** 06-14-2015 01:56:16 ***********************
+
+Updating c374664..aa64317
+
+
+*********************** 06-15-2015 10:27:39 ***********************
+
+Updating c374664..aa64317
+
+
+*********************** 06-15-2015 10:28:46 ***********************
+
+Updating c374664..aa64317
+
+
+*********************** 06-15-2015 10:32:20 ***********************
+
+Updating c374664..aa64317
+
+
+*********************** 06-15-2015 10:33:31 ***********************
+
+Updating c374664..aa64317
+
+
+*********************** 06-15-2015 10:37:42 ***********************
+
+Updating c374664..aa64317
+
+
+*********************** 06-15-2015 10:38:21 ***********************
+
+Updating c374664..aa64317
+
+
+*********************** 06-15-2015 10:46:45 ***********************
+
+Updating c374664..aa64317
+
+
+*********************** 06-15-2015 10:53:09 ***********************
+
+Updating c374664..aa64317
+
+
+*********************** 06-15-2015 11:11:49 ***********************
+
+Updating c374664..aa64317
+
+
+*********************** 06-15-2015 11:12:13 ***********************
+
+Updating c374664..aa64317
+
+
+*********************** 06-15-2015 14:00:34 ***********************
+
+Updating c374664..aa64317
+
+
+*********************** 06-15-2015 14:01:42 ***********************
+
+Updating c374664..aa64317
+
+
+*********************** 06-15-2015 14:31:13 ***********************
+
+Updating c374664..aa64317
+
+
+*********************** 06-15-2015 14:31:33 ***********************
+
+Updating c374664..aa64317
+
+
+*********************** 06-15-2015 14:32:06 ***********************
+
+Updating c374664..aa64317
+
+
+*********************** 06-15-2015 14:32:21 ***********************
+
+Updating c374664..aa64317
+
+
+*********************** 06-15-2015 14:33:09 ***********************
+
+Updating c374664..6b6d71a
+
+
+*********************** 06-15-2015 14:42:56 ***********************
+
+Updating c374664..6b6d71a
+
+
+*********************** 06-15-2015 14:43:20 ***********************
+
+Updating c374664..6b6d71a
+
+
+*********************** 06-15-2015 14:48:02 ***********************
+
+Updating c374664..6b6d71a
+
+
+*********************** 06-15-2015 14:48:33 ***********************
+
+Updating c374664..6b6d71a
+
+
+*********************** 06-15-2015 15:03:50 ***********************
+
+Updating c374664..6b6d71a
+
+
+*********************** 06-15-2015 15:04:11 ***********************
+
+Updating c374664..6b6d71a
+
+
+*********************** 06-15-2015 15:08:56 ***********************
+
+Updating c374664..6b6d71a
+
+
+*********************** 06-15-2015 15:09:21 ***********************
+
+Updating c374664..6b6d71a
+
+
+*********************** 06-15-2015 15:19:24 ***********************
+
+Updating c374664..6b6d71a
+
+
+*********************** 06-15-2015 15:19:43 ***********************
+
+Updating c374664..6b6d71a
+
+
+*********************** 06-15-2015 15:22:38 ***********************
+
+Updating c374664..6b6d71a
+
+
+*********************** 06-15-2015 15:23:00 ***********************
+
+Updating c374664..6b6d71a
+
+
+*********************** 06-15-2015 15:29:42 ***********************
+
+Updating c374664..6b6d71a
+
+
+*********************** 06-15-2015 15:30:07 ***********************
+
+Updating c374664..6b6d71a
+
+
+*********************** 06-15-2015 16:21:41 ***********************
+
+Updating c374664..6b6d71a
+
+
+*********************** 06-17-2015 09:23:30 ***********************
+
+Updating c374664..6b6d71a
+
+
+*********************** 06-17-2015 09:25:11 ***********************
+
+Updating c374664..6b6d71a
+
+
+*********************** 06-17-2015 09:25:39 ***********************
+
+Updating c374664..6b6b3fa
+
+
+*********************** 06-17-2015 11:24:14 ***********************
+
+Updating c374664..6b6b3fa
+
+
+*********************** 06-17-2015 11:24:37 ***********************
+
+Updating c374664..6b6b3fa
+
+
+*********************** 06-17-2015 11:26:22 ***********************
+
+Updating c374664..cdd44ec
+
+
+*********************** 06-17-2015 11:26:57 ***********************
+
+Updating c374664..cdd44ec
+
+
+*********************** 06-17-2015 16:45:20 ***********************
+
+Updating c374664..cdd44ec
+Fast-forward
+ .../local/Ecommage/Additemtocart/etc/config.xml    |  34 ---
+ .../Block/Product/List/Related.php                 |  30 +++
+ .../Ecommage/Addmultiitemtocart/Helper/Data.php    |  16 ++
+ .../controllers/Checkout/CartController.php        |   4 +-
+ .../controllers/IndexController.php                |   2 +-
+ .../Ecommage/Addmultiitemtocart/etc/config.xml     |  44 ++++
+ .../Ecommage/Myprescription/Block/Formsearch.php   |   6 +
+ .../Myprescription/Block/Myprescription.php        |  19 ++
+ .../Myprescription/Block/myprescription.php        |   6 -
+ .../local/Ecommage/Myprescription/Helper/Data.php  |  61 ++++++
+ .../local/Ecommage/Myprescription/Helper/data.php  |   4 -
+ .../Myprescription/controllers/IndexController.php |  44 ++--
+ .../controllers/SearchController.php               |   9 +
+ .../local/Ecommage/Myprescription/etc/config.xml   |   4 +-
+ .../Block/Adminhtml/Prescription.php               |  13 ++
+ .../Block/Adminhtml/Prescription/Edit.php          |  59 +++++
+ .../Block/Adminhtml/Prescription/Edit/Form.php     |  17 ++
+ .../Block/Adminhtml/Prescription/Edit/Tab/Main.php |  94 ++++++++
+ .../Block/Adminhtml/Prescription/Edit/Tabs.php     |  11 +
+ .../Block/Adminhtml/Prescription/Grid.php          |  62 ++++++
+ .../Prescriptioncheckout/Block/Prescription.php    |  13 ++
+ .../Ecommage/Prescriptioncheckout/Helper/Data.php  |  39 ++++
+ .../Model/Mysql4/Prescription.php                  |   8 +
+ .../Model/Mysql4/Prescription/Collection.php       |  15 ++
+ .../Prescriptioncheckout/Model/Observer.php        |  27 +++
+ .../Prescriptioncheckout/Model/Prescription.php    |  10 +
+ .../Model/Sales/Quote/Address/Total/Subtotal.php   |  65 ++++++
+ .../Adminhtml/PrescriptionController.php           | 138 ++++++++++++
+ .../controllers/Checkout/OnepageController.php     |  45 ++++
+ .../controllers/IndexController.php                |  20 ++
+ .../Prescriptioncheckout/etc/adminhtml.xml         |  15 ++
+ .../Ecommage/Prescriptioncheckout/etc/config.xml   | 132 +++++++++++
+ .../Ecommage/Prescriptioncheckout/etc/system.xml   |  34 +++
+ .../mysql4-install-0.1.0.php                       |  13 ++
+ .../mysql4-upgrade-0.1.0-0.1.1.php                 |   6 +
+ .../layout/ecommage_prescriptioncheckout.xml       |  26 +++
+ .../catalog/product/iwmm_horizontalbanners.phtml   |   4 +-
+ .../rwd/lamby/template/catalog/product/list.phtml  |  19 +-
+ .../template/catalog/product/list/related.phtml    |  16 +-
+ .../rwd/lamby/template/checkout/cart.phtml         |  38 ++++
+ .../rwd/lamby/template/checkout/onepage/link.phtml |   2 +-
+ .../template/ecommage/prescription_popup.phtml     |  36 +++
+ .../lamby/template/myprescription/formsearch.phtml |   6 +
+ .../template/myprescription/myprescription.phtml   | 242 ++++++++++++++++++++-
+ ...mtocart.xml => Ecommage_Addmultiitemtocart.xml} |   4 +-
+ app/etc/modules/Ecommage_Myscription.xml           |   0
+ app/etc/modules/Ecommage_Prescriptioncheckout.xml  |   9 +
+ errors/{local.xml.sample => local.xml}             |   0
+ js/Ecommage/myprescription/call-ajax.js            |  25 ++-
+ 49 files changed, 1451 insertions(+), 95 deletions(-)
+ delete mode 100644 app/code/local/Ecommage/Additemtocart/etc/config.xml
+ create mode 100644 app/code/local/Ecommage/Addmultiitemtocart/Block/Product/List/Related.php
+ create mode 100644 app/code/local/Ecommage/Addmultiitemtocart/Helper/Data.php
+ rename app/code/local/Ecommage/{Additemtocart => Addmultiitemtocart}/controllers/Checkout/CartController.php (96%)
+ rename app/code/local/Ecommage/{Additemtocart => Addmultiitemtocart}/controllers/IndexController.php (88%)
+ create mode 100644 app/code/local/Ecommage/Addmultiitemtocart/etc/config.xml
+ create mode 100644 app/code/local/Ecommage/Myprescription/Block/Formsearch.php
+ create mode 100644 app/code/local/Ecommage/Myprescription/Block/Myprescription.php
+ delete mode 100644 app/code/local/Ecommage/Myprescription/Block/myprescription.php
+ create mode 100644 app/code/local/Ecommage/Myprescription/Helper/Data.php
+ delete mode 100644 app/code/local/Ecommage/Myprescription/Helper/data.php
+ create mode 100644 app/code/local/Ecommage/Myprescription/controllers/SearchController.php
+ create mode 100644 app/code/local/Ecommage/Prescriptioncheckout/Block/Adminhtml/Prescription.php
+ create mode 100644 app/code/local/Ecommage/Prescriptioncheckout/Block/Adminhtml/Prescription/Edit.php
+ create mode 100644 app/code/local/Ecommage/Prescriptioncheckout/Block/Adminhtml/Prescription/Edit/Form.php
+ create mode 100644 app/code/local/Ecommage/Prescriptioncheckout/Block/Adminhtml/Prescription/Edit/Tab/Main.php
+ create mode 100644 app/code/local/Ecommage/Prescriptioncheckout/Block/Adminhtml/Prescription/Edit/Tabs.php
+ create mode 100644 app/code/local/Ecommage/Prescriptioncheckout/Block/Adminhtml/Prescription/Grid.php
+ create mode 100644 app/code/local/Ecommage/Prescriptioncheckout/Block/Prescription.php
+ create mode 100644 app/code/local/Ecommage/Prescriptioncheckout/Helper/Data.php
+ create mode 100644 app/code/local/Ecommage/Prescriptioncheckout/Model/Mysql4/Prescription.php
+ create mode 100644 app/code/local/Ecommage/Prescriptioncheckout/Model/Mysql4/Prescription/Collection.php
+ create mode 100644 app/code/local/Ecommage/Prescriptioncheckout/Model/Observer.php
+ create mode 100644 app/code/local/Ecommage/Prescriptioncheckout/Model/Prescription.php
+ create mode 100644 app/code/local/Ecommage/Prescriptioncheckout/Model/Sales/Quote/Address/Total/Subtotal.php
+ create mode 100644 app/code/local/Ecommage/Prescriptioncheckout/controllers/Adminhtml/PrescriptionController.php
+ create mode 100644 app/code/local/Ecommage/Prescriptioncheckout/controllers/Checkout/OnepageController.php
+ create mode 100644 app/code/local/Ecommage/Prescriptioncheckout/controllers/IndexController.php
+ create mode 100644 app/code/local/Ecommage/Prescriptioncheckout/etc/adminhtml.xml
+ create mode 100644 app/code/local/Ecommage/Prescriptioncheckout/etc/config.xml
+ create mode 100644 app/code/local/Ecommage/Prescriptioncheckout/etc/system.xml
+ create mode 100644 app/code/local/Ecommage/Prescriptioncheckout/sql/prescriptioncheckout_setup/mysql4-install-0.1.0.php
+ create mode 100644 app/code/local/Ecommage/Prescriptioncheckout/sql/prescriptioncheckout_setup/mysql4-upgrade-0.1.0-0.1.1.php
+ create mode 100644 app/design/adminhtml/default/default/layout/ecommage_prescriptioncheckout.xml
+ create mode 100644 app/design/frontend/rwd/lamby/template/ecommage/prescription_popup.phtml
+ create mode 100644 app/design/frontend/rwd/lamby/template/myprescription/formsearch.phtml
+ rename app/etc/modules/{Ecommage_Additemtocart.xml => Ecommage_Addmultiitemtocart.xml} (65%)
+ delete mode 100644 app/etc/modules/Ecommage_Myscription.xml
+ create mode 100644 app/etc/modules/Ecommage_Prescriptioncheckout.xml
+ rename errors/{local.xml.sample => local.xml} (100%)
+
+
+*********************** 06-17-2015 16:46:19 ***********************
+
+Updating cdd44ec..c729666
+
+
+*********************** 06-17-2015 17:57:57 ***********************
+
+Updating cdd44ec..c729666
+
+
+*********************** 06-17-2015 17:58:30 ***********************
+
+Updating cdd44ec..c729666
+
+
+*********************** 06-17-2015 17:58:52 ***********************
+
+Updating cdd44ec..dbdf86e
+
+
+*********************** 06-18-2015 09:17:06 ***********************
+
+Updating cdd44ec..dbdf86e
+
+
+*********************** 06-18-2015 09:28:00 ***********************
+
+Updating cdd44ec..dbdf86e
+
+
+*********************** 06-18-2015 09:29:44 ***********************
+
+Updating cdd44ec..0ef14b3
+
+
+*********************** 06-18-2015 09:31:26 ***********************
+
+Updating cdd44ec..0ef14b3
+
+
+*********************** 06-18-2015 10:21:42 ***********************
+
+Updating cdd44ec..0ef14b3
+
+
+*********************** 06-18-2015 10:22:59 ***********************
+
+Updating cdd44ec..0ef14b3
+
+
+*********************** 06-18-2015 10:23:44 ***********************
+
+Updating cdd44ec..0ef14b3
+
+
+*********************** 06-18-2015 10:26:40 ***********************
+
+Updating cdd44ec..0ef14b3
+
+
+*********************** 06-18-2015 10:27:43 ***********************
+
+Updating cdd44ec..0ef14b3
+
+
+*********************** 06-18-2015 10:28:08 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-18-2015 10:36:24 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-18-2015 11:01:31 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-18-2015 11:24:47 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-18-2015 11:25:29 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-18-2015 13:50:16 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-18-2015 13:51:48 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-18-2015 14:11:53 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-18-2015 14:12:23 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-18-2015 14:25:10 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-19-2015 11:35:36 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-19-2015 11:44:48 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-19-2015 14:20:58 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-19-2015 14:21:46 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-19-2015 14:30:19 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-19-2015 14:30:47 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-19-2015 15:29:10 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-19-2015 15:30:47 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-19-2015 16:37:31 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-19-2015 16:41:04 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-19-2015 16:41:44 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-19-2015 16:45:49 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-19-2015 16:49:32 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-19-2015 16:55:54 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-19-2015 17:20:35 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-19-2015 17:21:07 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-19-2015 19:25:50 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-19-2015 19:27:57 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-19-2015 19:28:52 ***********************
+
+Updating cdd44ec..a4bdce1
+
+
+*********************** 06-19-2015 19:29:39 ***********************
+
+Updating cdd44ec..aac7d20
+
+
+*********************** 06-19-2015 20:53:39 ***********************
+
+Updating cdd44ec..aac7d20
+
+
+*********************** 06-19-2015 20:54:16 ***********************
+
+Updating cdd44ec..39b8ae1
+
+
+*********************** 06-19-2015 20:55:09 ***********************
+
+Updating cdd44ec..39b8ae1
+
+
+*********************** 06-19-2015 20:58:01 ***********************
+
+Updating cdd44ec..39b8ae1
+
+
+*********************** 06-19-2015 20:58:32 ***********************
+
+Updating cdd44ec..39b8ae1
+
+
+*********************** 06-19-2015 20:59:30 ***********************
+
+Updating cdd44ec..38cd61e
+
+
+*********************** 06-21-2015 23:25:35 ***********************
+
+Updating cdd44ec..38cd61e
+
+
+*********************** 06-22-2015 00:25:49 ***********************
+
+Updating cdd44ec..38cd61e
+
+
+*********************** 06-22-2015 09:45:29 ***********************
+
+Updating cdd44ec..38cd61e
+
+
+*********************** 06-22-2015 09:50:07 ***********************
+
+Updating cdd44ec..38cd61e
+
+
+*********************** 06-22-2015 09:50:50 ***********************
+
+Updating cdd44ec..38cd61e
+
+
+*********************** 06-22-2015 09:51:12 ***********************
+
+Updating cdd44ec..7d0459a
+
+
+*********************** 06-22-2015 09:51:18 ***********************
+
+Updating cdd44ec..7d0459a
+
+
+*********************** 06-22-2015 09:53:45 ***********************
+
+Updating cdd44ec..7d0459a
+
+
+*********************** 06-22-2015 10:10:03 ***********************
+
+Updating cdd44ec..7d0459a
+
+
+*********************** 06-22-2015 10:11:43 ***********************
+
+Updating cdd44ec..7d0459a
+
+
+*********************** 06-22-2015 10:19:06 ***********************
+
+Updating cdd44ec..7d0459a
+
+
+*********************** 06-22-2015 10:19:53 ***********************
+
+Updating cdd44ec..7d0459a
+
+
+*********************** 06-22-2015 10:35:19 ***********************
+
+Updating cdd44ec..7d0459a
+
+
+*********************** 06-22-2015 10:36:19 ***********************
+
+Updating cdd44ec..7d0459a
+
+
+*********************** 06-22-2015 10:51:43 ***********************
+
+Updating cdd44ec..7d0459a
+
+
+*********************** 06-22-2015 12:12:20 ***********************
+
+Updating cdd44ec..7d0459a
+
+
+*********************** 06-22-2015 12:13:34 ***********************
+
+Updating cdd44ec..7d0459a
+
+
+*********************** 06-22-2015 12:14:07 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-22-2015 12:32:20 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-22-2015 12:42:09 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-22-2015 13:43:20 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-22-2015 13:47:02 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-22-2015 13:54:56 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-22-2015 14:14:29 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-22-2015 14:16:28 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-22-2015 15:05:42 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-22-2015 15:16:56 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-22-2015 15:17:51 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-22-2015 17:40:09 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-22-2015 17:49:36 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-22-2015 17:50:17 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-22-2015 18:02:18 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-22-2015 18:03:02 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-22-2015 18:10:58 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-23-2015 09:44:46 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-23-2015 09:45:40 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-23-2015 09:46:29 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-23-2015 10:05:04 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-23-2015 10:05:32 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-23-2015 10:31:55 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-23-2015 11:02:11 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-23-2015 11:11:22 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-23-2015 14:37:36 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-23-2015 15:22:12 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-23-2015 15:22:59 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-23-2015 16:19:38 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-23-2015 16:44:40 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-23-2015 16:45:17 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-23-2015 17:12:09 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-23-2015 18:23:32 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-23-2015 18:24:34 ***********************
+
+Updating cdd44ec..5e065c8
+
+
+*********************** 06-23-2015 18:25:08 ***********************
+
+Updating cdd44ec..ab0254d
+
+
+*********************** 06-23-2015 18:38:58 ***********************
+
+Updating cdd44ec..ab0254d
+
+
+*********************** 06-23-2015 18:39:33 ***********************
+
+Updating cdd44ec..ab0254d
+
+
+*********************** 06-23-2015 18:40:03 ***********************
+
+Updating cdd44ec..cc46519
+
+
+*********************** 06-23-2015 18:40:32 ***********************
+
+Updating cdd44ec..cc46519
+
+
+*********************** 06-23-2015 18:41:19 ***********************
+
+Updating cdd44ec..cc46519
+
+
+*********************** 06-23-2015 19:02:32 ***********************
+
+Updating cdd44ec..cc46519
+
+
+*********************** 06-23-2015 19:03:18 ***********************
+
+Updating cdd44ec..cc46519
+
+
+*********************** 06-23-2015 19:03:51 ***********************
+
+Updating cdd44ec..f94009e
+
+
+*********************** 06-24-2015 11:43:37 ***********************
+
+Updating cdd44ec..f94009e
+
+
+*********************** 06-24-2015 11:46:09 ***********************
+
+Updating cdd44ec..f94009e
+
+
+*********************** 06-24-2015 11:48:44 ***********************
+
+Updating cdd44ec..f94009e
+
+
+*********************** 06-24-2015 11:49:02 ***********************
+
+Updating cdd44ec..f94009e
+
+
+*********************** 06-24-2015 12:45:27 ***********************
+
+Updating cdd44ec..f94009e
+
+
+*********************** 06-24-2015 12:46:16 ***********************
+
+Updating cdd44ec..f94009e
+
+
+*********************** 06-24-2015 13:54:14 ***********************
+
+Updating cdd44ec..f94009e
+
+
+*********************** 06-24-2015 13:55:01 ***********************
+
+Updating cdd44ec..f94009e
+
+
+*********************** 06-24-2015 13:55:21 ***********************
+
+Updating cdd44ec..f94009e
+
+
+*********************** 06-24-2015 14:26:00 ***********************
+
+Updating cdd44ec..f94009e
+
+
+*********************** 06-24-2015 14:26:55 ***********************
+
+Updating cdd44ec..f94009e
+
+
+*********************** 06-24-2015 16:08:23 ***********************
+
+Updating cdd44ec..f94009e
+
+
+*********************** 06-24-2015 16:09:01 ***********************
+
+Updating cdd44ec..f94009e
+
+
+*********************** 06-24-2015 16:09:31 ***********************
+
+Updating cdd44ec..3e79d9f
+
+
+*********************** 06-24-2015 16:47:22 ***********************
+
+Updating cdd44ec..3e79d9f
+
+
+*********************** 06-24-2015 16:52:27 ***********************
+
+Updating cdd44ec..3e79d9f
+
+
+*********************** 06-24-2015 16:52:56 ***********************
+
+Updating cdd44ec..3e79d9f
+
+
+*********************** 06-25-2015 18:43:08 ***********************
+
+Updating cdd44ec..3e79d9f
+
+
+*********************** 06-30-2015 11:55:32 ***********************
+
+Updating cdd44ec..3e79d9f
+
+
+*********************** 06-30-2015 12:04:03 ***********************
+
+Updating cdd44ec..3e79d9f
+
+
+*********************** 06-30-2015 12:04:33 ***********************
+
+Updating cdd44ec..3e79d9f
+
+
+*********************** 06-30-2015 19:02:59 ***********************
+
+Updating cdd44ec..3e79d9f
+
+
+*********************** 07-11-2015 11:16:24 ***********************
+
+Updating 3e79d9f..1674d97
+Fast-forward
+ app/Mage.php                                       |   4 +-
+ .../Fooman/GoogleAnalyticsPlus/Helper/Data.php     |   4 +-
+ .../Fooman/GoogleAnalyticsPlus/etc/system.xml      |   6 +
+ .../controllers/MoneybookersController.php         |  10 +
+ app/code/core/Mage/Adminhtml/Controller/Action.php |   2 +-
+ .../Mage/Adminhtml/controllers/AjaxController.php  |  10 +
+ .../Catalog/Category/WidgetController.php          |  10 +
+ .../Catalog/Product/DatafeedsController.php        |  10 +
+ .../Catalog/Product/ReviewController.php           |   3 +-
+ .../Catalog/Product/WidgetController.php           |  10 +
+ .../controllers/Cms/Block/WidgetController.php     |  10 +
+ .../controllers/Cms/Page/WidgetController.php      |  11 +
+ .../Adminhtml/controllers/Cms/PageController.php   |   3 +-
+ .../controllers/Cms/WysiwygController.php          |  10 +
+ .../System/Config/ValidatevatController.php        |  10 +
+ .../Mage/Adminhtml/controllers/JsonController.php  |  10 +
+ .../controllers/NotificationController.php         |   9 +-
+ .../controllers/Report/CustomerController.php      |   3 +-
+ .../controllers/Report/ProductController.php       |   3 +-
+ .../controllers/Report/ReviewController.php        |   3 +-
+ .../controllers/Report/SalesController.php         |   3 +-
+ .../controllers/Report/ShopcartController.php      |   3 +-
+ .../Adminhtml/controllers/Report/TagController.php |   5 +-
+ .../Adminhtml/controllers/ReportController.php     |   3 +-
+ .../controllers/Rss/CatalogController.php          |  16 +-
+ .../Adminhtml/controllers/Rss/OrderController.php  |  16 +-
+ .../Sales/Billing/AgreementController.php          |   3 +-
+ .../Sales/Order/View/GiftmessageController.php     |  10 +
+ .../Sales/Recurring/ProfileController.php          |  10 +
+ .../controllers/Sales/TransactionsController.php   |   3 +-
+ .../System/Config/System/StorageController.php     |  10 +
+ .../Mage/Adminhtml/controllers/TagController.php   |   3 +-
+ .../Adminhtml/controllers/Tax/RateController.php   |   5 +-
+ .../Mage/Adminhtml/controllers/TaxController.php   |  10 +
+ .../Adminhtml/Api2/AttributeController.php         |  10 +
+ .../controllers/Directpost/PaymentController.php   |   4 +
+ .../Adminhtml/Bundle/SelectionController.php       |  10 +-
+ .../controllers/Adminhtml/RefreshController.php    |  10 +
+ .../Adminhtml/Centinel/IndexController.php         |  10 +
+ .../controllers/MultishippingController.php        |   2 +-
+ .../Adminhtml/Extension/LocalController.php        |  10 +
+ .../Mage/Core/Controller/Varien/Router/Admin.php   |  11 +
+ .../Core/Controller/Varien/Router/Standard.php     |  16 +-
+ app/code/core/Mage/Customer/Model/Customer.php     |   7 +-
+ .../Mage/Dataflow/Model/Convert/Parser/Csv.php     |   4 +
+ app/code/core/Mage/ImportExport/Model/Abstract.php |   2 +-
+ .../Mage/ImportExport/Model/Export/Adapter/Csv.php |  14 +-
+ .../Mage/Install/Controller/Router/Install.php     |  39 ++
+ app/code/core/Mage/Install/etc/config.xml          |  24 +-
+ .../Adminhtml/Oauth/AuthorizeController.php        |  10 +
+ .../Paygate/Authorizenet/PaymentController.php     |  10 +
+ .../Adminhtml/Paypal/ReportsController.php         |   3 +-
+ .../Mage/Rss/controllers/CatalogController.php     |   5 +-
+ .../core/Mage/Rss/controllers/OrderController.php  |   3 +-
+ .../controllers/Recurring/ProfileController.php    |   3 +-
+ .../Mage/Widget/Block/Adminhtml/Widget/Chooser.php |   3 +-
+ .../controllers/Adminhtml/WidgetController.php     |  10 +
+ .../Myprescription/Block/Adminhtml/Register.php    |  13 +
+ .../Block/Adminhtml/Register/Edit.php              |  56 +++
+ .../Block/Adminhtml/Register/Edit/Form.php         |  17 +
+ .../Block/Adminhtml/Register/Edit/Tab/Main.php     | 143 ++++++
+ .../Block/Adminhtml/Register/Edit/Tabs.php         |  22 +
+ .../Block/Adminhtml/Register/Grid.php              |  85 ++++
+ .../Block/Adminhtml/Register/Renderer/Status.php   |  16 +
+ .../Myprescription/Block/Rigisterrepeat.php        |   9 +
+ .../local/Ecommage/Myprescription/Helper/Data.php  |  13 +
+ .../Myprescription/Model/Myprescription.php        |   8 +
+ .../Myprescription/Model/Mysql4/Myprescription.php |   8 +
+ .../Model/Mysql4/Myprescription/Collection.php     |   9 +
+ .../Ecommage/Myprescription/Model/Mysql4/Setup.php | 113 +++++
+ .../Adminhtml/RegisterrepeatController.php         | 140 ++++++
+ .../controllers/RegisterrepeatController.php       |  23 +
+ .../Ecommage/Myprescription/etc/adminhtml.xml      |  16 +
+ .../local/Ecommage/Myprescription/etc/config.xml   |  67 +++
+ .../local/Ecommage/Myprescription/etc/system.xml   |  34 ++
+ .../mysql4-install-0.1.0.php                       |  29 ++
+ .../Block/Adminhtml/Sales/Order/View/Info.php      |   5 +
+ .../Block/Prescriptionproduct.php                  |   9 +
+ .../Rewriteonepagecheckout/Helper/Data.php         |   0
+ .../controllers/IndexController.php                |  50 +++
+ .../Ecommage/Rewriteonepagecheckout/etc/config.xml |  50 +++
+ app/code/local/Magik/Lambysettings/etc/lamby.xml   |  16 +-
+ .../default/layout/ecommage_myprescription.xml     |  24 +
+ .../default/layout/rewriteonepagecheckout.xml      |  24 +
+ .../sales/order/view/info.phtml                    | 187 ++++++++
+ .../sales/order/view/items.phtml                   |  67 +++
+ .../sales/order/view/items/renderer/default.phtml  | 256 +++++++++++
+ .../base/default/template/checkout/cart.phtml      |   2 +-
+ .../default/template/checkout/cart/noItems.phtml   |   2 +-
+ .../template/checkout/onepage/failure.phtml        |   2 +-
+ .../default/template/opc/onepage/billing.phtml     |  10 +-
+ .../base/default/template/rss/order/details.phtml  |   5 +-
+ .../base/default/template/wishlist/email/rss.phtml |   2 +-
+ .../default/modern/template/checkout/cart.phtml    |   2 +-
+ app/design/frontend/rwd/lamby/layout/checkout.xml  | 491 +++++++++++++++++++++
+ .../rwd/lamby/layout/outofstocksubscription.xml    |   4 +-
+ .../rwd/lamby/layout/rewriteonepagecheckout.xml    |   8 +
+ .../rwd/lamby/template/catalog/product/view.phtml  |  44 +-
+ .../template/catalog/product/view/addtocart.phtml  |  36 +-
+ .../rwd/lamby/template/checkout/onepage/link.phtml |  18 +-
+ .../template/myprescription/registerform.phtml     |  64 +++
+ .../catalog/product/view.phtml                     | 394 ++++++++++-------
+ .../prescriptionproduct.phtml                      |  24 +
+ app/etc/applied.patches.list                       |  84 ++++
+ .../modules/Ecommage_Rewriteonepagecheckout.xml    |  13 +
+ errors/processor.php                               |   4 +-
+ get.php                                            |   2 +-
+ js/Ecommage/myprescription/call-ajax.js            |  37 +-
+ lib/PEAR/PEAR/PEAR.php                             | 315 ++++++-------
+ lib/PEAR/PEAR/PEAR5.php                            |  33 ++
+ lib/Varien/Io/File.php                             |  11 +
+ skin/frontend/base/default/js/iwd/opc/checkout.js  |  12 +-
+ skin/frontend/rwd/lamby/js/amasty/amcart/amAjax.js |  91 +---
+ 113 files changed, 3141 insertions(+), 539 deletions(-)
+ create mode 100644 app/code/core/Mage/Install/Controller/Router/Install.php
+ create mode 100644 app/code/local/Ecommage/Myprescription/Block/Adminhtml/Register.php
+ create mode 100644 app/code/local/Ecommage/Myprescription/Block/Adminhtml/Register/Edit.php
+ create mode 100644 app/code/local/Ecommage/Myprescription/Block/Adminhtml/Register/Edit/Form.php
+ create mode 100644 app/code/local/Ecommage/Myprescription/Block/Adminhtml/Register/Edit/Tab/Main.php
+ create mode 100644 app/code/local/Ecommage/Myprescription/Block/Adminhtml/Register/Edit/Tabs.php
+ create mode 100644 app/code/local/Ecommage/Myprescription/Block/Adminhtml/Register/Grid.php
+ create mode 100644 app/code/local/Ecommage/Myprescription/Block/Adminhtml/Register/Renderer/Status.php
+ create mode 100644 app/code/local/Ecommage/Myprescription/Block/Rigisterrepeat.php
+ create mode 100644 app/code/local/Ecommage/Myprescription/Model/Myprescription.php
+ create mode 100644 app/code/local/Ecommage/Myprescription/Model/Mysql4/Myprescription.php
+ create mode 100644 app/code/local/Ecommage/Myprescription/Model/Mysql4/Myprescription/Collection.php
+ create mode 100644 app/code/local/Ecommage/Myprescription/Model/Mysql4/Setup.php
+ create mode 100644 app/code/local/Ecommage/Myprescription/controllers/Adminhtml/RegisterrepeatController.php
+ create mode 100644 app/code/local/Ecommage/Myprescription/controllers/RegisterrepeatController.php
+ create mode 100644 app/code/local/Ecommage/Myprescription/etc/adminhtml.xml
+ create mode 100644 app/code/local/Ecommage/Myprescription/etc/system.xml
+ create mode 100644 app/code/local/Ecommage/Myprescription/sql/ecommage_myprescription_setup/mysql4-install-0.1.0.php
+ create mode 100644 app/code/local/Ecommage/Rewriteonepagecheckout/Block/Adminhtml/Sales/Order/View/Info.php
+ create mode 100644 app/code/local/Ecommage/Rewriteonepagecheckout/Block/Prescriptionproduct.php
+ create mode 100644 app/code/local/Ecommage/Rewriteonepagecheckout/Helper/Data.php
+ create mode 100644 app/code/local/Ecommage/Rewriteonepagecheckout/controllers/IndexController.php
+ create mode 100644 app/code/local/Ecommage/Rewriteonepagecheckout/etc/config.xml
+ create mode 100644 app/design/adminhtml/default/default/layout/ecommage_myprescription.xml
+ create mode 100644 app/design/adminhtml/default/default/layout/rewriteonepagecheckout.xml
+ create mode 100644 app/design/adminhtml/default/default/template/rewriteonepagecheckout/sales/order/view/info.phtml
+ create mode 100644 app/design/adminhtml/default/default/template/rewriteonepagecheckout/sales/order/view/items.phtml
+ create mode 100644 app/design/adminhtml/default/default/template/rewriteonepagecheckout/sales/order/view/items/renderer/default.phtml
+ create mode 100644 app/design/frontend/rwd/lamby/layout/checkout.xml
+ create mode 100644 app/design/frontend/rwd/lamby/layout/rewriteonepagecheckout.xml
+ create mode 100644 app/design/frontend/rwd/lamby/template/myprescription/registerform.phtml
+ create mode 100644 app/design/frontend/rwd/lamby/template/rewriteonepagecheckout/prescriptionproduct.phtml
+ create mode 100644 app/etc/applied.patches.list
+ create mode 100644 app/etc/modules/Ecommage_Rewriteonepagecheckout.xml
+ create mode 100644 lib/PEAR/PEAR/PEAR5.php
+
+
+*********************** 07-11-2015 11:26:17 ***********************
+
+Updating 1674d97..2c2751e
+Fast-forward
+ .../rwd/default/template/checkout/cart.phtml       |  2 +-
+ app/etc/applied.patches.list                       | 84 ----------------------
+ 2 files changed, 1 insertion(+), 85 deletions(-)
+ delete mode 100644 app/etc/applied.patches.list
+
+
+*********************** 07-13-2015 13:50:20 ***********************
+
+Updating 2c2751e..a698d19
+Fast-forward
+ .../rwd/lamby/template/catalog/product/list.phtml     | 19 +++++++++++--------
+ 1 file changed, 11 insertions(+), 8 deletions(-)
+
+
+*********************** 07-13-2015 16:11:49 ***********************
+
+Updating a698d19..2364023
+Fast-forward
+ .../base/default/template/opc/wrapper.phtml        | 28 +++++++++++++--
+ .../rwd/lamby/layout/rewriteonepagecheckout.xml    |  2 +-
+ .../prescriptionproduct.phtml                      | 42 +++++++++++-----------
+ js/Ecommage/myprescription/call-ajax.js            |  2 ++
+ 4 files changed, 50 insertions(+), 24 deletions(-)
+
+
+*********************** 07-13-2015 16:52:46 ***********************
+
+Updating 2364023..11f586d
+Fast-forward
+ js/Ecommage/myprescription/call-ajax.js | 1 +
+ 1 file changed, 1 insertion(+)
+
+
+*********************** 07-13-2015 17:12:31 ***********************
+
+Updating 11f586d..4ea185a
+Fast-forward
+ .../frontend/rwd/lamby/template/myprescription/myprescription.phtml   | 1 +
+ js/Ecommage/myprescription/call-ajax.js                               | 4 ++--
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+
+
+*********************** 08-06-2015 14:21:25 ***********************
+
+Updating 4ea185a..1a63c3d
+Fast-forward
+ .../rwd/lamby/template/myprescription/myprescription.phtml | 14 +++++++++-----
+ 1 file changed, 9 insertions(+), 5 deletions(-)
+
+
+*********************** 08-06-2015 14:42:20 ***********************
+
+Updating 1a63c3d..974f6ee
+Fast-forward
+ .../frontend/rwd/lamby/template/myprescription/myprescription.phtml   | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+
+*********************** 08-06-2015 15:15:18 ***********************
+
+Updating 974f6ee..b925603
+Fast-forward
+ .../template/myprescription/myprescription.phtml   | 23 ++++++++++++++++++----
+ 1 file changed, 19 insertions(+), 4 deletions(-)
+
+
+*********************** 08-06-2015 15:29:00 ***********************
+
+Updating b925603..862b48d
+Fast-forward
+ .../frontend/rwd/lamby/template/myprescription/myprescription.phtml   | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+
+*********************** 08-06-2015 16:33:50 ***********************
+
+Updating 862b48d..0eeb337
+Fast-forward
+ .../template/catalog/product/view/addtocart.phtml  | 87 +++++++++++++++++++++-
+ .../template/myprescription/myprescription.phtml   | 10 +--
+ 2 files changed, 91 insertions(+), 6 deletions(-)
+
+
+*********************** 08-07-2015 10:16:56 ***********************
+
+Updating 0eeb337..4e57e04
+Fast-forward
+ .../Ecommage/Myprescription/Model/Observer.php     | 28 ++++++++++++++++++++++
+ .../local/Ecommage/Myprescription/etc/config.xml   | 11 +++++++++
+ 2 files changed, 39 insertions(+)
+ create mode 100644 app/code/local/Ecommage/Myprescription/Model/Observer.php
+
+
+*********************** 08-07-2015 14:36:40 ***********************
+
+Updating 4e57e04..6adc751
+Fast-forward
+ .../core/Mage/Api/Model/Server/Adapter/Soap.php    |  6 ++--
+ .../core/Mage/Catalog/Model/Product/Api/V2.php     |  5 +++-
+ .../controllers/IndexController.php                |  6 +++-
+ .../template/ecommage/otherprescription.phtml      |  2 +-
+ .../template/myprescription/myprescription.phtml   | 34 ++++++++++++++++++----
+ 5 files changed, 42 insertions(+), 11 deletions(-)
+
+
+*********************** 08-07-2015 14:45:22 ***********************
+
+Updating 6adc751..9798fc2
+Fast-forward
+ .../frontend/rwd/lamby/template/myprescription/myprescription.phtml      | 1 +
+ 1 file changed, 1 insertion(+)
+
+
+*********************** 08-07-2015 16:30:18 ***********************
+
+Updating 9798fc2..b544a89
+Fast-forward
+ .../frontend/rwd/lamby/template/catalog/product/view/addtocart.phtml | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+
+*********************** 08-07-2015 17:45:05 ***********************
+
+Updating b544a89..9d817e3
+Fast-forward
+ .../lamby/template/myprescription/formsearch.phtml | 60 +++++++++++++++++++---
+ js/Ecommage/myprescription/call-ajax.js            | 32 +-----------
+ 2 files changed, 56 insertions(+), 36 deletions(-)
+
+
+*********************** 08-07-2015 18:01:48 ***********************
+
+Updating 9d817e3..c89036e
+Fast-forward
+ .../controllers/RegisterrepeatController.php       |   4 +-
+ .../template/myprescription/registerform.phtml     | 113 ++++++++++-----------
+ 2 files changed, 54 insertions(+), 63 deletions(-)
+
+
+*********************** 08-07-2015 18:28:28 ***********************
+
+Updating c89036e..9c02349
+Fast-forward
+ .../Ecommage/Myprescription/controllers/RegisterrepeatController.php   | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+
+*********************** 08-10-2015 17:10:14 ***********************
+
+Updating 9c02349..9b8c2d4
+Fast-forward
+ .../Myprescription/Block/Myprescription.php        | 17 ++++--
+ .../Myprescription/Model/Catalog/Layer.php         | 66 ++++++++++++++++++++++
+ .../controllers/SearchController.php               |  8 +++
+ .../local/Ecommage/Myprescription/etc/config.xml   |  5 ++
+ .../lamby/template/myprescription/formsearch.phtml | 47 +++++++++++++--
+ 5 files changed, 134 insertions(+), 9 deletions(-)
+ create mode 100644 app/code/local/Ecommage/Myprescription/Model/Catalog/Layer.php
+
+
+*********************** 08-11-2015 16:27:03 ***********************
+
+Updating 9b8c2d4..335254a
+Fast-forward
+ .../Ecommage/Myprescription/Block/Myprescription.php      | 15 +++++++++++++++
+ .../rwd/lamby/template/myprescription/formsearch.phtml    |  9 ++-------
+ 2 files changed, 17 insertions(+), 7 deletions(-)
+
+
+*********************** 08-11-2015 17:29:51 ***********************
+
+Updating 335254a..cca57a3
+Fast-forward
+ .../Myprescription/Block/Myprescription.php        | 25 +++++++++++++++++-----
+ .../lamby/template/myprescription/formsearch.phtml | 21 ++++++++++++++++--
+ 2 files changed, 39 insertions(+), 7 deletions(-)
+
+
+*********************** 08-11-2015 17:37:04 ***********************
+
+Updating cca57a3..efae125
+Fast-forward
+ .../frontend/rwd/lamby/template/myprescription/formsearch.phtml       | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+
+*********************** 08-13-2015 16:03:52 ***********************
+
+Updating efae125..162c1c9
+Fast-forward
+ .../template/myprescription/registerform.phtml     | 71 ++++++++++++++++------
+ 1 file changed, 51 insertions(+), 20 deletions(-)
+
+
+*********************** 08-13-2015 17:21:02 ***********************
+
+Updating 162c1c9..7e08c4e
+Fast-forward
+ .../Myprescription/Block/Myprescription.php        | 30 ++++++++--------------
+ .../Myprescription/Model/Catalog/Layer.php         | 15 +++++------
+ .../local/Ecommage/Myprescription/etc/config.xml   | 10 ++++----
+ .../lamby/template/myprescription/formsearch.phtml | 10 +++-----
+ 4 files changed, 26 insertions(+), 39 deletions(-)
+
+
+*********************** 08-13-2015 18:13:43 ***********************
+
+Updating 7e08c4e..4f90b87
+Fast-forward
+ app/code/local/Ecommage/Myprescription/Block/Myprescription.php       | 4 ++--
+ .../frontend/rwd/lamby/template/myprescription/formsearch.phtml       | 2 +-
+ .../frontend/rwd/lamby/template/myprescription/registerform.phtml     | 1 -
+ 3 files changed, 3 insertions(+), 4 deletions(-)
+
+
+*********************** 08-13-2015 18:34:46 ***********************
+
+Updating 4f90b87..f36f5c3
+Fast-forward
+ .../frontend/rwd/lamby/template/catalog/product/view/addtocart.phtml  | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+
+*********************** 08-14-2015 10:49:52 ***********************
+
+Updating f36f5c3..ec82ffb
+Fast-forward
+ .../template/myprescription/registerform.phtml     | 26 +++++++++++++++++-----
+ 1 file changed, 20 insertions(+), 6 deletions(-)
+
+
+*********************** 08-14-2015 11:05:34 ***********************
+
+Updating ec82ffb..6350034
+Fast-forward
+ .../rwd/lamby/template/myprescription/myprescription.phtml     | 10 +++++++++-
+ js/Ecommage/myprescription/call-ajax.js                        | 10 ----------
+ 2 files changed, 9 insertions(+), 11 deletions(-)
+
+
+*********************** 08-14-2015 11:13:52 ***********************
+
+Updating 6350034..5dc5bbd
+Fast-forward
+ app/code/local/Ecommage/Myprescription/Block/Myprescription.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+
+*********************** 08-14-2015 11:18:14 ***********************
+
+Updating 5dc5bbd..6ce271f
+Fast-forward
+ .../frontend/rwd/lamby/template/myprescription/myprescription.phtml     | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+
+*********************** 08-14-2015 16:11:36 ***********************
+
+Updating 6ce271f..78830c0
+Fast-forward
+ .../Myprescription/Block/Myprescription.php        | 54 ----------------
+ .../Myprescription/Model/Catalog/Layer.php         | 74 +++++++---------------
+ .../controllers/SearchController.php               |  8 +--
+ .../frontend/rwd/lamby/layout/myprescription.xml   | 14 +---
+ .../lamby/template/myprescription/formsearch.phtml | 74 +---------------------
+ .../template/myprescription/myprescription.phtml   | 11 +---
+ 6 files changed, 30 insertions(+), 205 deletions(-)
+
+
+*********************** 08-15-2015 10:22:37 ***********************
+
+Updating 78830c0..6fd0614
+
+
+*********************** 08-15-2015 11:15:50 ***********************
+
+Updating 78830c0..6fd0614
+
+
+*********************** 08-15-2015 11:16:09 ***********************
+
+Updating 78830c0..6fd0614
+
+
+*********************** 08-15-2015 11:16:23 ***********************
+
+Updating 78830c0..10aff68
+
+
+*********************** 08-15-2015 11:39:13 ***********************
+
+Updating 78830c0..10aff68
+
+
+*********************** 08-15-2015 11:39:31 ***********************
+
+Updating 78830c0..10aff68
+
+
+*********************** 08-15-2015 11:39:48 ***********************
+
+Updating 78830c0..666885b
+
+
+*********************** 08-17-2015 10:45:33 ***********************
+
+Updating 666885b..4b8c886
+Fast-forward
+ app/design/frontend/rwd/lamby/layout/myprescription.xml           | 8 +++++++-
+ .../rwd/lamby/template/myprescription/myprescription.phtml        | 2 --
+ 2 files changed, 7 insertions(+), 3 deletions(-)
+
+
+*********************** 08-17-2015 10:58:22 ***********************
+
+Updating 4b8c886..281ad33
+Fast-forward
+ app/code/local/Ecommage/Myprescription/Helper/Data.php    | 15 +++++----------
+ .../local/Ecommage/Myprescription/Model/Catalog/Layer.php |  1 +
+ 2 files changed, 6 insertions(+), 10 deletions(-)
+
+
+*********************** 08-17-2015 11:19:03 ***********************
+
+Updating 281ad33..8d89f4d
+Fast-forward
+ app/design/frontend/rwd/lamby/template/checkout/cart.phtml | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+
+*********************** 08-17-2015 14:32:48 ***********************
+
+Updating 8d89f4d..3be604d
+Fast-forward
+ .../template/myprescription/registerform.phtml     | 101 +++++++++++++++++----
+ 1 file changed, 83 insertions(+), 18 deletions(-)
+
+
+*********************** 08-17-2015 14:54:58 ***********************
+
+Updating 3be604d..54805f9
+Fast-forward
+ .../template/myprescription/registerform.phtml     | 43 +++++++---------------
+ 1 file changed, 14 insertions(+), 29 deletions(-)
+
+
+*********************** 08-24-2015 10:41:20 ***********************
+
+Updating 54805f9..6607de9
+Fast-forward
+ .../rwd/lamby/template/myprescription/registerform.phtml   | 14 ++++++--------
+ 1 file changed, 6 insertions(+), 8 deletions(-)
+
+
+*********************** 09-08-2015 17:48:06 ***********************
+
+Updating 6607de9..b0adf91
+Fast-forward
+ .../Ecommage/Myprescription/Model/Observer.php     | 603 ++++++++++++++++++++-
+ .../Myprescription/controllers/IndexController.php |   2 +
+ .../local/Ecommage/Myprescription/etc/config.xml   |   8 +
+ 3 files changed, 612 insertions(+), 1 deletion(-)
+
+
+*********************** 09-10-2015 10:24:17 ***********************
+
+Updating b0adf91..8cc1c9e
+Fast-forward
+ .../Ecommage/Myprescription/Model/Observer.php     | 66 +++++++++++-----------
+ 1 file changed, 33 insertions(+), 33 deletions(-)
+
+
+*********************** 09-11-2015 09:49:57 ***********************
+
+Updating 8cc1c9e..4874d3e
+Fast-forward
+ app/code/local/Ecommage/Myprescription/Model/Observer.php | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+
+*********************** 09-12-2015 10:11:04 ***********************
+
+Updating 4874d3e..fd1ce1a
+Fast-forward
+ app/locale/en_GB/Mage_AdminNotification.csv |   29 +
+ app/locale/en_GB/Mage_Adminhtml.csv         | 1007 ++++++++++
+ app/locale/en_GB/Mage_Api.csv               |  356 ++++
+ app/locale/en_GB/Mage_Backup.csv            |   20 +
+ app/locale/en_GB/Mage_Bundle.csv            |   52 +
+ app/locale/en_GB/Mage_Catalog.csv           |  667 +++++++
+ app/locale/en_GB/Mage_CatalogInventory.csv  |   42 +
+ app/locale/en_GB/Mage_CatalogRule.csv       |   66 +
+ app/locale/en_GB/Mage_CatalogSearch.csv     |   48 +
+ app/locale/en_GB/Mage_Checkout.csv          |  237 +++
+ app/locale/en_GB/Mage_Cms.csv               |   65 +
+ app/locale/en_GB/Mage_Contacts.csv          |   25 +
+ app/locale/en_GB/Mage_Core.csv              |  301 +++
+ app/locale/en_GB/Mage_Cron.csv              |   17 +
+ app/locale/en_GB/Mage_Customer.csv          |  444 +++++
+ app/locale/en_GB/Mage_Dataflow.csv          |   30 +
+ app/locale/en_GB/Mage_Directory.csv         |   43 +
+ app/locale/en_GB/Mage_Downloadable.csv      |   68 +
+ app/locale/en_GB/Mage_Eav.csv               |   50 +
+ app/locale/en_GB/Mage_Email_Templates.csv   | 2805 +++++++++++++++++++++++++++
+ app/locale/en_GB/Mage_GiftMessage.csv       |   38 +
+ app/locale/en_GB/Mage_GoogleAnalytics.csv   |    4 +
+ app/locale/en_GB/Mage_GoogleBase.csv        |   80 +
+ app/locale/en_GB/Mage_GoogleCheckout.csv    |   89 +
+ app/locale/en_GB/Mage_GoogleOptimizer.csv   |   31 +
+ app/locale/en_GB/Mage_Install.csv           |  112 ++
+ app/locale/en_GB/Mage_Media.csv             |    3 +
+ app/locale/en_GB/Mage_Newsletter.csv        |  137 ++
+ app/locale/en_GB/Mage_Page.csv              |   55 +
+ app/locale/en_GB/Mage_Paygate.csv           |   45 +
+ app/locale/en_GB/Mage_Payment.csv           |   43 +
+ app/locale/en_GB/Mage_Paypal.csv            |   96 +
+ app/locale/en_GB/Mage_PaypalUk.csv          |   27 +
+ app/locale/en_GB/Mage_Poll.csv              |   41 +
+ app/locale/en_GB/Mage_ProductAlert.csv      |   32 +
+ app/locale/en_GB/Mage_Rating.csv            |   28 +
+ app/locale/en_GB/Mage_Reports.csv           |  141 ++
+ app/locale/en_GB/Mage_Review.csv            |   84 +
+ app/locale/en_GB/Mage_Rss.csv               |   57 +
+ app/locale/en_GB/Mage_Rule.csv              |   33 +
+ app/locale/en_GB/Mage_Sales.csv             |  514 +++++
+ app/locale/en_GB/Mage_SalesRule.csv         |   89 +
+ app/locale/en_GB/Mage_Sendfriend.csv        |   26 +
+ app/locale/en_GB/Mage_Shipping.csv          |   78 +
+ app/locale/en_GB/Mage_Sitemap.csv           |   47 +
+ app/locale/en_GB/Mage_Strikeiron.csv        |   47 +
+ app/locale/en_GB/Mage_Tag.csv               |   91 +
+ app/locale/en_GB/Mage_Tax.csv               |  118 ++
+ app/locale/en_GB/Mage_Usa.csv               |  203 ++
+ app/locale/en_GB/Mage_Weee.csv              |   18 +
+ app/locale/en_GB/Mage_Wishlist.csv          |   56 +
+ 51 files changed, 8835 insertions(+)
+ create mode 100644 app/locale/en_GB/Mage_AdminNotification.csv
+ create mode 100644 app/locale/en_GB/Mage_Adminhtml.csv
+ create mode 100644 app/locale/en_GB/Mage_Api.csv
+ create mode 100644 app/locale/en_GB/Mage_Backup.csv
+ create mode 100644 app/locale/en_GB/Mage_Bundle.csv
+ create mode 100644 app/locale/en_GB/Mage_Catalog.csv
+ create mode 100644 app/locale/en_GB/Mage_CatalogInventory.csv
+ create mode 100644 app/locale/en_GB/Mage_CatalogRule.csv
+ create mode 100644 app/locale/en_GB/Mage_CatalogSearch.csv
+ create mode 100644 app/locale/en_GB/Mage_Checkout.csv
+ create mode 100644 app/locale/en_GB/Mage_Cms.csv
+ create mode 100644 app/locale/en_GB/Mage_Contacts.csv
+ create mode 100644 app/locale/en_GB/Mage_Core.csv
+ create mode 100644 app/locale/en_GB/Mage_Cron.csv
+ create mode 100644 app/locale/en_GB/Mage_Customer.csv
+ create mode 100644 app/locale/en_GB/Mage_Dataflow.csv
+ create mode 100644 app/locale/en_GB/Mage_Directory.csv
+ create mode 100644 app/locale/en_GB/Mage_Downloadable.csv
+ create mode 100644 app/locale/en_GB/Mage_Eav.csv
+ create mode 100644 app/locale/en_GB/Mage_Email_Templates.csv
+ create mode 100644 app/locale/en_GB/Mage_GiftMessage.csv
+ create mode 100644 app/locale/en_GB/Mage_GoogleAnalytics.csv
+ create mode 100644 app/locale/en_GB/Mage_GoogleBase.csv
+ create mode 100644 app/locale/en_GB/Mage_GoogleCheckout.csv
+ create mode 100644 app/locale/en_GB/Mage_GoogleOptimizer.csv
+ create mode 100644 app/locale/en_GB/Mage_Install.csv
+ create mode 100644 app/locale/en_GB/Mage_Media.csv
+ create mode 100644 app/locale/en_GB/Mage_Newsletter.csv
+ create mode 100644 app/locale/en_GB/Mage_Page.csv
+ create mode 100644 app/locale/en_GB/Mage_Paygate.csv
+ create mode 100644 app/locale/en_GB/Mage_Payment.csv
+ create mode 100644 app/locale/en_GB/Mage_Paypal.csv
+ create mode 100644 app/locale/en_GB/Mage_PaypalUk.csv
+ create mode 100644 app/locale/en_GB/Mage_Poll.csv
+ create mode 100644 app/locale/en_GB/Mage_ProductAlert.csv
+ create mode 100644 app/locale/en_GB/Mage_Rating.csv
+ create mode 100644 app/locale/en_GB/Mage_Reports.csv
+ create mode 100644 app/locale/en_GB/Mage_Review.csv
+ create mode 100644 app/locale/en_GB/Mage_Rss.csv
+ create mode 100644 app/locale/en_GB/Mage_Rule.csv
+ create mode 100644 app/locale/en_GB/Mage_Sales.csv
+ create mode 100644 app/locale/en_GB/Mage_SalesRule.csv
+ create mode 100644 app/locale/en_GB/Mage_Sendfriend.csv
+ create mode 100644 app/locale/en_GB/Mage_Shipping.csv
+ create mode 100644 app/locale/en_GB/Mage_Sitemap.csv
+ create mode 100644 app/locale/en_GB/Mage_Strikeiron.csv
+ create mode 100644 app/locale/en_GB/Mage_Tag.csv
+ create mode 100644 app/locale/en_GB/Mage_Tax.csv
+ create mode 100644 app/locale/en_GB/Mage_Usa.csv
+ create mode 100644 app/locale/en_GB/Mage_Weee.csv
+ create mode 100644 app/locale/en_GB/Mage_Wishlist.csv
+

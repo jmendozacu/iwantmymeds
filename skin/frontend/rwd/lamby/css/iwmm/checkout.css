@@ -1,0 +1,16 @@
+.one-page-checkout .active .step-title .number {
+	background-color: #00bb00;
+}
+
+.one-page-checkout .active .step-title h3 {
+	color: #00bb00 !important;
+}
+
+.one-page-checkout .data-table tfoot td {
+	text-align: left !important;
+}
+
+.one-page-checkout .buttons-set button.button {
+	display: block;
+	clear: both;
+}

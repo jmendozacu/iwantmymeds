@@ -1,1 +1,8 @@
 gitig
+app/etc/local.xml
+access.log
+access.log
+var/
+media/catalog/
+media/downloadable/
+media/import/

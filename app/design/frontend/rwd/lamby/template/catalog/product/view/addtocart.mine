@@ -1,0 +1,143 @@
+<div class="add-to-cart">
+    <?php $_product = $this->getProduct(); ?>
+    <?php $buttonTitle = $this->__('Add to Cart'); ?>
+    <?php if($_product->isSaleable()): ?>
+        <div class="pull-left">
+            <div class="custom pull-left">
+                <label for="qty"><?php echo $this->__('Quantity') ?></label>
+                <?php if(!$_product->isGrouped()): ?>
+                    <input type="text" name="qty" id="qty"  maxlength="12" value="<?php echo $this->getProductDefaultQty() * 1 ?>" title="<?php echo $this->__('Quantity') ?>" class="input-text qty" />
+                    <button onClick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;" class="increase items-count" type="button"><i class="icon-plus">&nbsp;</i></button>
+                    <button onClick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 0 ) result.value--;return false;" class="reduced items-count" type="button"><i class="icon-minus">&nbsp;</i></button>
+                <?php endif; ?>
+                <?php echo $this->getChildHtml('', true, true) ?>
+            </div> <!--custom pull-left-->
+        </div> <!--pull-left-->
+    <?php endif; ?>
+    <div class="pull-right">
+        <?php
+        $a= $_product->getData('is_prescription_product');
+        $b = $data['prescription_id'];
+        ?>
+        <?php if($_product->getData('is_prescription_product') == '1' && empty(Mage::getSingleton('core/session')->getPerscriptionCheck()) ){ ?>
+            <a href="#more_info_popup" data-url="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart btn-more-info"><span><?php echo $this->__('Add to Cart') ?></span></a>
+        <?php }else{ ?>
+            <button type="button"  title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><?php echo $this->__('Add to Cart') ?></span></button>
+        <?php } ?>
+        
+
+
+
+    </div> <!--pull-right-->
+</div> <!--add-to-cart-->
+
+    <a class="prescription-type" href="#prescription_type" style="display: none;"> </a>
+    <div  style="display: none">
+        <div id="prescription_type">
+            <?php echo $this->getLayout()
+                ->createBlock("prescriptioncheckout/otherprescription")
+                ->setTemplate("ecommage/otherprescription.phtml")
+                ->toHtml(); ?>
+            <script type="text/javascript">
+                $j(document).ready(function() {
+                    var prescription;
+                    var form = $j('#prescription-form');
+                    var checkbox = $j('.prescription-radiobox');
+
+                    $j('input.prescription-radiobox').on('change', function() {
+                        $j('input.prescription-radiobox').not(this).prop('checked', false);
+                        prescription = $j(this).val();
+                    });
+
+                    // click prescription-button
+                    jQuery("#prescription-button").click(function(){
+                        jQuery.ajax( {
+                            type: "POST",
+                            url: '<?php echo Mage::getUrl('prescriptioncheckout/index/cart?redr=1') ?>',
+                            data: {prescription: prescription,url_product: jQuery('.btn-more-info').attr('data-url')},
+                            success: function() {
+                                window.location = '<?php echo Mage::helper('core/url')->getCurrentUrl(); ?>';
+                            }
+                        } );
+                    });
+                });
+            </script>
+        </div>
+    </div>
+
+    <div style="display: none;">
+        <?php echo $this->getLayout()
+            ->createBlock("myprescription/Prescriptiontypeinfo")
+            ->setTemplate("myprescription/prescriptiontypeinfo.phtml")
+            ->toHtml(); ?>
+        <script type="text/javascript">
+            // Call fancy box
+            jQuery(".btn-more-info").fancybox({
+                'transitionIn' : 'none',
+                'transitionOut' : 'none'
+            });
+            jQuery("a.prescription-type").fancybox({
+                'transitionIn' : 'none',
+                'transitionOut' : 'none'
+            });
+
+            jQuery(".btn-prescription-type").fancybox({
+                'transitionIn' : 'none',
+                'transitionOut' : 'none'
+            });
+
+            // click submit_pop_up_form
+            jQuery('#submit_pop_up_form').click(function(){
+                if (!jQuery("input[name='perscription_type']:checked").val()) {
+                    jQuery('.message-valid-type').show();
+                    return false;
+                }
+                else {
+                    jQuery('.message-valid-type').hide();
+                }
+                if(jQuery('#name_on_prescription').val().length <= 0){
+                    jQuery('#name_on_prescription').focus();
+                    jQuery('.message-valid-name').show();
+                    return false;
+                }else{
+                    jQuery('.message-valid-name').hide();
+                }
+                if(jQuery('#name_on_prescription').val().length <= 0){
+                    jQuery('#name_on_prescription').focus();
+                    jQuery('.message-valid-name').show();
+                    return false;
+                }else{
+                    jQuery('.message-valid-name').hide();
+                }
+                jQuery('#magikloading').show();
+                jQuery.ajax( {
+                    type: "POST",
+                    url: '<?php echo Mage::getUrl('myprescription/index/prescriptioncheck') ?>',
+                    data: {perscription_type:jQuery('.prescription:checked').val(),name_on_prescription: jQuery('#name_on_prescription').val(),url_redirect_product:jQuery('#url_redirect_product').val()},
+                    success: function( response ) {
+                        jQuery('#magikloading').hide();
+                        if(response.success){
+                            if(response.perscription_type == 'no_pay') {
+                                jQuery("#prescription_type input#url_product").val(jQuery('.btn-more-info').attr('data-url'));
+                                jQuery('a.prescription-type').click();
+                            }else{
+                                window.location.replace(response.url);
+                            }
+                        }else{
+                            jQuery('#fancybox-close').click();
+                        }
+                    }
+                } );
+            });
+
+
+
+            // validate checked for checkbox on form more_info_popup
+            jQuery('#more_info_popup div.checkbox').click(function(){
+                jQuery('#more_info_popup div.checkbox').removeAttr('id');
+                jQuery('input.prescription').removeAttr('checked');
+                jQuery(this).attr('id','checked');
+                jQuery('div#checked input.prescription').attr('checked','checked');
+            });
+        </script>
+    </div>

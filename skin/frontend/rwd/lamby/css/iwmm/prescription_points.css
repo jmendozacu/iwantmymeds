@@ -1,0 +1,16 @@
+.prescription_points {
+	margin: 20px 0;
+}
+
+.prescription_points ul {
+	padding: 0;
+}
+
+.prescription_points ul li {
+	list-style: none;
+	background: url(../../images/iwmm/prescription_point.png) no-repeat left;
+	margin: 0;
+	padding-left: 22px;
+	margin-left: 5px;
+	margin-top: 12px;
+}

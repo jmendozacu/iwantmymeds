@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ecommage_Addmultiitemtocart>
+            <version>0.0.1</version>
+        </Ecommage_Addmultiitemtocart>
+    </modules>
+
+    <global>
+        <blocks>
+            <addmultiitemtocart>
+                <class>Ecommage_Addmultiitemtocart_Block</class>
+            </addmultiitemtocart>
+            <catalog>
+                <rewrite>
+                    <product_list_related>Ecommage_Addmultiitemtocart_Block_Product_List_Related</product_list_related>
+                </rewrite>
+            </catalog>
+        </blocks>
+        <rewrite>
+            <ecommage_addmultiitemtocart_checkout_cart>
+                <from><![CDATA[#^/checkout/cart/addmultiple/.*$#]]></from>
+                <to>/addmultiitemtocart/checkout_cart/addmultiple/</to>
+            </ecommage_addmultiitemtocart_checkout_cart>
+        </rewrite>
+        <helpers>
+            <addmultiitemtocart>
+                <class>Ecommage_Addmultiitemtocart_Helper</class>
+            </addmultiitemtocart>
+        </helpers>
+    </global>
+    <frontend>
+        <routers>
+            <addmultiitemtocart>
+                <use>standard</use>
+                <args>
+                    <module>Ecommage_Addmultiitemtocart</module>
+                    <frontName>addmultiitemtocart</frontName>
+                </args>
+            </addmultiitemtocart>
+        </routers>
+    </frontend>
+
+</config>

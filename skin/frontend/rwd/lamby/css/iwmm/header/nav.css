@@ -1,0 +1,105 @@
+nav {
+
+}
+
+#nav > li {
+	position: relative;
+}
+
+#nav .level0-wrapper {
+	width: auto;
+	padding: 15px;
+	box-sizing: border-box;
+	border: solid 2px #33a3f8;
+	border-top: none;
+	box-shadow: none;
+}
+
+.nav-block {
+	margin: 0;
+}
+
+#nav ul.level0 {
+	overflow: hidden;
+	width: 295px;
+}
+
+#nav ul.level0.wide {
+	width: 590px;
+}
+
+#nav ul.level0 > li {
+	width: auto;
+	padding: 0;
+}
+
+ul.level1 li,
+.button.iwmm_viewall {
+	float: left;
+	width: 210px;
+}
+
+#nav ul.level1 {
+	width: 295px;
+	float: left;
+}
+
+ul.level1 li {
+	margin-left: 10px;
+	margin-right: 75px;
+}
+
+#nav ul li.title {
+	margin: 0;
+	/*padding: 0;*/
+}
+
+#nav ul li.title a {
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #4c5962;
+}
+
+#nav ul li.title a:before {
+	display: none;
+}
+
+#nav ul.level0 > li > a,
+#nav ul li a {
+	transition: all .3s !important;
+}
+
+#nav ul li a {
+	font-family: 'Montserrat', sans-serif !important;
+	font-size: 13px;
+	color: #8b9398;
+}
+
+#nav ul.level1 > li a:before {
+	padding-right: 10px;
+}
+
+#nav ul li a.button.iwmm_viewall {
+	background: #33a3f8;
+	color: #fff;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	transition: all .2s;
+	font-family: 'Open Sans', sans-serif !important;
+	margin-top: 10px;
+	padding-left: 0;
+	padding-right: 0;
+	font-size: 14px;
+	display: block !important;
+}
+
+#nav ul li a.button.iwmm_viewall:before {
+	display: none;
+}
+
+#nav ul li a.button.iwmm_viewall:hover {
+	border-color: #33a3f8;
+	color: #33a3f8;
+	background: #fff;
+}

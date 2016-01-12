@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magik_Lambysettings>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Magik_Lambysettings>
+    </modules>
+</config>

@@ -1,0 +1,32 @@
+<?php if ($this->isPossibleOnepageCheckout()):
+    $checkPrescription = Mage::helper('prescriptioncheckout')->checkPrescriptionInCart();
+    ?>
+    <?php if ($checkPrescription <= 0): ?>
+    <button type="button"
+            onclick="window.location='<?php echo $this->getCheckoutUrl() ?>';"
+            title="<?php echo $this->__('Proceed to Checkout') ?>"
+            class="button btn-proceed-checkout<?php if ($this->isDisabled()): ?> no-checkout<?php endif; ?>"<?php if ($this->isDisabled()): ?>
+        disabled="disabled"<?php endif; ?> ><span><?php echo $this->__('Proceed to Checkout') ?></span>
+    </button>
+<?php else: ?>
+    <?php
+    $prescription =  Mage::getSingleton('checkout/session')->getPrescriptionAttribute();
+    if (isset($prescription['prescription_id'])) {
+        $checking_value = $prescription['prescription_id'];
+    }
+
+    ?>
+    <?php if ($checking_value == 0): ?>
+        <a class="prescription-button button btn-proceed-checkout" id="prescription-button" href="#prescription-popup"><?php echo $this->__('Proceed to Checkout') ?></a>
+    <?php else: ?>
+        <button type="button"
+                onclick="window.location='<?php echo $this->getCheckoutUrl() ?>';"
+                title="<?php echo $this->__('Proceed to Checkout') ?>"
+                class="button btn-proceed-checkout<?php if ($this->isDisabled()): ?> no-checkout<?php endif; ?>"<?php if ($this->isDisabled()): ?>
+            disabled="disabled"<?php endif; ?> ><span><?php echo $this->__('Proceed to Checkout') ?></span>
+        </button>
+    <?php endif; ?>
+<?php endif; ?>
+<?php endif ?>
+
+

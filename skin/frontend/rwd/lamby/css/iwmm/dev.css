@@ -1,0 +1,100 @@
+.action-register.prescription-form form h1{
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+}
+.action-register.prescription-form form .validation-advice{
+	float: left;
+	width: 100%;
+	position: relative;
+	margin-top: 10px;
+}
+.item-info .actions a.button.btn-cart{
+	text-transform: uppercase;
+	margin: 25px 8px 0px;
+	padding: 9.5px 28.5px;
+}
+.iwmm-side-nav-categories .box-category {
+	padding: 15px;
+}
+
+.myprescription-search-index .col-main h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 32px;
+	color: #902D97;
+	float: left;
+	border-bottom: 2px solid #EAEFF2;
+	width: 100%;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	line-height: 50px;
+}
+.myprescription-search-index .col-main{
+	margin-top: 20px;
+}
+.myprescription-search-index .col-main #limiter ul ul{
+	border: 1px solid #F3F3F3;
+}
+.myprescription-search-index .col-main #limiter ul ul li:first-child{
+	border-top: 1px solid #F3F3F3;
+}
+.myprescription-search-index .col-main .item-info .info-inner .item-content .item-price .regular-price-prescription{
+	margin-top: 10px;
+	display: block;
+	color: #902D97;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: 'Montserrat', sans-serif;
+}
+.myprescription-search-index .col-main .item-info .info-inner .item-content .item-price .price-box{
+	margin-top: 3px;
+}
+.myprescription-search-index .col-main  .item-info .info-inner .item-content .item-price .price-box .regular-price .price{
+	font-size: 24px;
+}
+.myprescription-search-index .col-main  .item-info .actions a.btn-cart,
+.myprescription-search-index .col-main  .item-info .actions button.btn-cart{
+	margin-top: 10px;
+	margin-top: 15px;
+	background: #902D97;
+}
+.myprescription-search-index .col-main .item-info .actions a.btn-cart:hover,
+.myprescription-search-index .col-main  .item-info .actions button.btn-cart:hover{
+	border: solid 2px  #902D97;
+	color:  #902D97;
+	background: white;
+}
+.myprescription-search-index #fancybox-content #login_before{
+	padding: 20px 0;
+	text-align: center;
+}
+.myprescription-search-index #fancybox-content #login_before .warrning h4{
+	font-size: 30px;
+	font-weight: bold;
+	color: #902D97;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.myprescription-search-index #fancybox-content #login_before .warrning p{
+	font-size: 16px;
+	color: #33A3F8;
+	margin-bottom: 30px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+}
+.myprescription-search-index #fancybox-content #login_before .action-warrning a.btn-cancel-login{
+	margin-right: 20px;
+}
+.cart form .header-cart{
+	float: left;
+	display: inline-block;
+	margin-top: 20px;
+	width: 100%;
+}
+
+/* fix bugs hidden text on selectoption field on onepage checkout */
+.input-box select#billing-address-select{
+	padding: 0;
+}
