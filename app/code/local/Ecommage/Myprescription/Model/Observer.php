@@ -249,6 +249,7 @@ class Ecommage_Myprescription_Model_Observer
             $_product
                 ->setCompanyCode((string)$array['company_code'])
                 ->setCompanyName((string)$array['Company_Name'])
+                ->setSupplierName((string)$array['Supplier_Name'])
                 ->setBrandCode((string)$array['Brand_Code'])
                 ->setBrandName((string)$array['Brand_Name'])
                 ->setSubbrandName((string)$array['Subbrand'])
@@ -610,6 +611,7 @@ class Ecommage_Myprescription_Model_Observer
             $array = array();
             $array['company_code'] = (string)$company->Code;
             $array['Company_Name'] = (string)$company->Company_Name;
+            $array['Supplier_Name'] = (string)$company->Distributor;
             foreach ($company->Brand as $brands) {
                 $array['Brand_Code'] = (string)$brands->Brand_Code;
                 $array['Brand_Name'] = (string)$brands->Brand_Name;
