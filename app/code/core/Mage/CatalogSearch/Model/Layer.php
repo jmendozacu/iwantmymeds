@@ -65,7 +65,8 @@ class Mage_CatalogSearch_Model_Layer extends Mage_Catalog_Model_Layer
 
         Mage::getSingleton('catalog/product_status')->addVisibleFilterToCollection($collection);
         Mage::getSingleton('catalog/product_visibility')->addVisibleInSearchFilterToCollection($collection);
-
+        Mage::log($collection->getSelectSQL(1), false, 'search.log', true);
+        Mage::log((array)Mage::getConfig()->getNode()->global->models->catalogsearch, false, 'search.log', true);
         return $this;
     }
 
